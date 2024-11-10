@@ -19,7 +19,7 @@ h1{
 
 header p{
     font-size: 20px;
-    margin-left: 30rem;
+    margin-left: 40rem;
 }
 
 article{
@@ -29,7 +29,12 @@ article{
 }
 
 h2{
-    font-size: 50px;
+    font-size: 60px;
+    margin-left: 4rem;
+}
+
+h3{
+    font-size: 30px;
 }
 
 section{
@@ -38,5 +43,15 @@ section{
 }
 
 section p{
-    padding-top: 3rem;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+footer p{
+    padding-left: 100px;
+    padding-top: 50px;
+    height: 10ch;
+    background-color: black;
+    color: white;
+    font-size: 20px;
 }

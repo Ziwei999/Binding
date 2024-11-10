@@ -4,3 +4,140 @@ header{
     linear-gradient(to right, grey 1px, transparent 1px),
     linear-gradient(to bottom, grey 1px, transparent 1px);
 }
+
+aside{
+    display: flex;
+    
+}
+
+
+.element{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    padding-top: 0;
+}
+
+.title{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.rec{
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 15rem;
+}
+
+.stand{
+    grid-column: 1;
+    grid-row: 3;
+    margin-left: 8rem;
+}
+
+.rep{
+    grid-column: 1;
+    grid-row: 4;
+    margin-left: 8rem;
+}
+
+.page3{
+    grid-column: 1;
+    grid-row: 5;
+    
+}
+
+.page4{
+    margin-top: 10rem;
+}
+
+
+
+
+@media (min-width: 1281px){
+
+    article{
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+    h1{
+        font-size: 180px;
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+
+    header p{
+        margin-left: 80rem;
+        font-size: 50px;
+    }
+    h2{
+        font-size: 80px;
+        width: 500px;
+        
+    }
+
+    section p{
+        font-size: 30px;
+        padding-top: 2rem;
+    }
+
+    .tool{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "aside main main";
+    }
+    .element{
+        display: grid;
+        grid-template-columns: 300px 400px 400px 400px;
+        grid-template-rows: 170px 10px;
+        
+    }
+
+    .title{
+        grid-column: 1;
+        grid-row: 1;
+        border-style: solid;
+        padding-top: 0;
+        width: 400px;
+        padding-left: 30px;
+    }
+
+    .rec{
+        grid-column: 2;
+        grid-row: 1;
+        border-style: solid;
+        padding-top: 0;
+        width: 300px;
+        margin-left: 140px;
+        padding-left: 80px;
+    }
+
+    .stand{
+        grid-column: 3;
+        grid-row: 1;
+        border-style: solid;
+        padding-top: 0;
+        padding-left: 60px;
+        width: 300px;
+    }
+
+    .rep{
+        grid-column: 4;
+        grid-row: 1;
+        border-style: solid;
+        padding-top: 0;
+        width: 300px;
+        padding-left: 30px;
+        margin-left: 100px;
+        padding-right: 30px;
+    }
+
+    .page3{
+        grid-column: 1/span 4;
+        grid-row: 2;
+    }
+
+    
+}
