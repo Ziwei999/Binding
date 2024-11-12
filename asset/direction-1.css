@@ -24,6 +24,7 @@ header p{
     grid-template-rows: 1fr;
     grid-template-areas:
             "aside" "main" "section";
+    /* width: 33ch; */
     
 }
 
@@ -75,7 +76,7 @@ header p{
 
 .page4{
     margin-top: 3rem;
-    width: 33ch;
+    /* width: 33ch; */
 }
 
 @media (min-width: 1281px){

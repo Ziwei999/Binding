@@ -47,7 +47,7 @@ h2{
 
 h3{
     font-size: 22px;
-    width: 20ch;
+    /* width: 20ch; */
 }
 
 
@@ -57,7 +57,7 @@ section p{
 
 
 footer{
-    width: 67ch;
+    width: 35ch;
 }
 
 footer p{
