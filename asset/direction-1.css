@@ -1,5 +1,177 @@
+h1{
+    /* font-size: 40px; */
+    text-align: left;
+}
+
+
 span{
     border-style: solid;
     padding: 10px;
     line-height: 2;
+}
+
+header p{
+    margin-left: 1rem;
+    font-size: 20px;
+}
+
+
+
+#tool{
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+            "aside" "main" "section";
+    
+}
+
+.element{
+    display: grid;
+    grid-template-columns: 260px;
+    grid-template-rows: 100px 70px 70px 70px 100px;
+    padding-top: 4rem;
+    
+}
+
+.title{
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 0;
+   
+}
+
+.rec{
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 0;
+    margin-left: 0;
+    border-top: 3px solid #888;
+    border-bottom: 3px solid #888;
+}
+
+.stand{
+    grid-column: 1;
+    grid-row: 3;
+    margin-left: 0;
+    margin-top: 0;
+    border-bottom: 3px solid #888;
+}
+
+.rep{
+    grid-column: 1;
+    grid-row: 4;
+    margin-left: 0;
+    margin-top: 0;
+    border-bottom: 3px solid #888;
+}
+
+.page3{
+    grid-column: 1;
+    grid-row: 5;
+    
+}
+
+.page4{
+    margin-top: 3rem;
+    width: 33ch;
+}
+
+@media (min-width: 1281px){
+    header{
+        padding-left: 30rem;
+        width: 100ch;
+    }
+
+    header p{
+        font-size: 40px;
+    }
+
+    h1{
+        font-size: 130px;
+    }
+    span{
+        text-align: left;
+        
+    }
+    h2{
+        font-size: 80px;
+    }
+
+    article p{
+        font-size: 30px;
+    }
+
+    
+
+    #tool{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "aside main"
+            "section section";
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    #tool > section{
+        grid-area: section;
+        margin-left: 80px;
+        margin-right: 80px;
+        padding-top: 50px;
+    }
+
+    .element{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px 100px 100px 100px;
+        margin-left: 160px;
+        margin-right: 200px;
+        width: 160ch;
+        
+    }
+
+    .title{
+        grid-column: 1;
+        grid-row: 1;
+        
+    }
+
+    h3{
+        font-size: 40px;
+        width: 200ch;
+    }
+
+    .rec{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .stand{
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .rep{
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .page3{
+        grid-column: 1;
+        grid-row: 5;
+        width: 200ch;
+    }
+
+    .page4{
+        width:190ch;
+        margin-left: 160px;
+        margin-right: 160px;
+    }
+
+
+
+
 }

@@ -10,22 +10,25 @@ aside{
     
 }
 
-.tool{
+
+
+#tool{
     display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 1fr;
-        grid-template-areas:
-            "aside" "main" "main";
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+            "aside" "main " "section";
+    
             
 }
 
 
 .element{
     display: grid;
-    grid-template-columns: 450px;
-    grid-template-rows: 200px 100px 100px 170px 10px;
-    padding-top: 0;
-    margin-right: 20px;
+    grid-template-columns: 260px;
+    grid-template-rows: 200px 100px 100px 100px 100px;
+    padding-top: 6rem;
+    /* margin-right: 20px; */
 }
 
 
@@ -55,14 +58,14 @@ aside{
 .rec p{
     margin-top: 0;
     font-size: 25px;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .stand{
     grid-column: 1;
     grid-row: 3;
     margin-left: 0;
-    margin-top: 30px;
+    margin-top: 0;
     border-style: solid;
     padding-left: 20px;
 }
@@ -76,7 +79,7 @@ aside{
     grid-row: 4;
     margin-left: 0;
     border-style: solid;
-    margin-top: 60px;
+    margin-top: 0;
     padding-left: 20px;
 }
 
@@ -92,7 +95,7 @@ aside{
 
 .page4{
     margin-top: 3rem;
-    width: 60ch;
+    width: 35ch;
 }
 
 
@@ -129,12 +132,18 @@ aside{
         padding-top: 2rem;
     }
 
-    .tool{
+    #tool{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
+        grid-template-columns: repeat(1fr, 1fr);
+        grid-template-rows: 1fr 1fr;
         grid-template-areas:
-            "aside main main";
+            "aside main"
+            "... section";
+    }
+
+    #tool > section{
+        grid-area: section;
+        padding-left: 150px;
     }
 
     main{
@@ -243,7 +252,7 @@ aside{
         width: 300px;
         
     }
-    .tool{
+    #tool{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
@@ -403,5 +412,6 @@ aside{
 
     .page4{
         margin-top: 3rem;
+        
     }
 }
