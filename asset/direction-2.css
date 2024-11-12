@@ -5,6 +5,10 @@ header{
     linear-gradient(to bottom, grey 1px, transparent 1px);
 }
 
+h1{
+    text-align: center;
+}
+
 aside{
     display: flex;
     

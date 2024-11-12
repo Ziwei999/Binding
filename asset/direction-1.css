@@ -15,7 +15,13 @@ header p{
     font-size: 20px;
 }
 
+.line1{
+    display: none;
+}
 
+.line2{
+    display: none;
+}
 
 #tool{
     margin-bottom: 0;
@@ -33,6 +39,7 @@ header p{
     grid-template-columns: 260px;
     grid-template-rows: 100px 70px 70px 70px 100px;
     padding-top: 4rem;
+    margin-right: 0;
     
 }
 
@@ -40,7 +47,7 @@ header p{
     grid-column: 1;
     grid-row: 1;
     margin-top: 0;
-   
+  
 }
 
 .rec{
@@ -50,6 +57,7 @@ header p{
     margin-left: 0;
     border-top: 3px solid #888;
     border-bottom: 3px solid #888;
+    margin-right: 0;
 }
 
 .stand{
@@ -79,7 +87,7 @@ header p{
     /* width: 33ch; */
 }
 
-@media (min-width: 1281px){
+@media (min-width: 1281px) and (max-width: 1440px){
     header{
         padding-left: 30rem;
         width: 100ch;
@@ -129,7 +137,7 @@ header p{
         grid-template-columns: 1fr;
         grid-template-rows: 100px 100px 100px 100px 100px;
         margin-left: 160px;
-        margin-right: 200px;
+        margin-right: 160px;
         width: 160ch;
         
     }
@@ -148,6 +156,7 @@ header p{
     .rec{
         grid-column: 1;
         grid-row: 2;
+        margin-right: 160px;
     }
 
     .stand{
