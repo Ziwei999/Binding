@@ -61,13 +61,14 @@ footer{
 }
 
 footer p{
-    padding-left: 100px;
-    padding-top: 50px;
-    height: 10ch;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    height: 5ch;
     
     background-color: black;
     color: white;
-    font-size: 20px;
+    font-size: 10px;
 }
 
 

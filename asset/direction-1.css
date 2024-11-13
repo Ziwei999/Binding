@@ -10,7 +10,7 @@ span{
     line-height: 2;
 }
 
-header p{
+.author{
     margin-left: 1rem;
     font-size: 20px;
 }
@@ -21,6 +21,14 @@ header p{
 
 .line2{
     display: none;
+}
+
+.line3{
+    display: none;
+}
+
+.grid{
+    border: none;
 }
 
 #tool{
@@ -87,21 +95,21 @@ header p{
     /* width: 33ch; */
 }
 
-@media (min-width: 1281px) and (max-width: 1440px){
+@media (min-width: 1281px){
     header{
         padding-left: 30rem;
         width: 100ch;
+        
     }
 
-    header p{
+    .author{
         font-size: 40px;
     }
 
-    h1{
-        font-size: 130px;
-    }
+    
     span{
         text-align: left;
+        font-size: 130px;
         
     }
     h2{
@@ -135,7 +143,7 @@ header p{
     .element{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 100px 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px 100px 150px;
         margin-left: 160px;
         margin-right: 160px;
         width: 160ch;
@@ -172,13 +180,13 @@ header p{
     .page3{
         grid-column: 1;
         grid-row: 5;
-        width: 200ch;
+        width: 100ch;
     }
 
     .page4{
-        width:190ch;
+        
         margin-left: 160px;
-        margin-right: 160px;
+        width: 100ch;
     }
 
 

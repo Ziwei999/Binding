@@ -6,11 +6,16 @@ h1{
 
 .t{
     margin-bottom: 0;
+    padding-top: 0;
+    
 }
 
+span{
+    font-size: 30px;
+}
 
 .the{
-   padding-left: 10px;
+    margin-top: 0;
    border-right: 3px solid #888;
    border-bottom: 3px solid #888;
     
@@ -23,21 +28,316 @@ h1{
 }
 .line2{
     border-bottom: 3px solid #888;
-    padding-left: 77px;
+    padding-left: 64px;
+    
 }
+
+.line3{
+    border-right: 3px solid #888;
+    border-bottom: 3px solid #888;
+    padding-left: 64px;
+    padding-top: 20px;
+}
+
+
 
 .modern{
     
-    margin-top: 30px;
+    margin-top: 20px;
     /* border-right: 3px solid #888;
     border-bottom: 3px solid #888; */
 }
 
 .m{
     
-    margin-left: 0px;
     padding-top: 30px;
+    padding-left: 11px;
     border-left: 3px solid #888;
     border-right: 3px solid #888;
     border-bottom: 3px solid #888;
 }
+
+.line{
+    margin-top: 0;
+    
+}
+
+.grid{
+    border-right: 3px solid #888;
+    border-bottom: 3px solid #888;
+    padding-left: 117px;
+    padding-top: 10px;
+}
+
+
+.author{
+    margin-left: 80px;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-left: 30px;
+    font-size: 20px;
+    margin-top: 0;
+    border-left: 3px solid #888;
+    border-right: 3px solid #888;
+}
+
+
+
+aside{
+    border-right: 3px solid #888;
+    border-bottom: 3px solid #888;
+    /* background-size: 100px 100px;
+    background-image:
+    linear-gradient(to right, grey 1px, transparent 1px),
+    linear-gradient(to bottom, grey 1px, transparent 1px); */
+}
+
+#tool{
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+            "aside" "main" "section";
+    /* width: 33ch; */
+    
+}
+
+.element{
+    display: grid;
+    grid-template-columns: 260px;
+    grid-template-rows: 100px 70px 70px 70px 100px;
+    padding-top: 4rem;
+    margin-right: 0;
+    
+}
+
+.title{
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 0;
+  
+}
+
+.rec{
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 0;
+    margin-left: 0;
+    border-right: 3px solid #888;
+    margin-right: 150px;
+}
+
+.stand{
+    grid-column: 1;
+    grid-row: 3;
+    margin-left: 0;
+    margin-top: 0;
+    border-right: 3px solid #888;
+    margin-right: 40px;
+}
+
+.rep{
+    grid-column: 1;
+    grid-row: 4;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 60px;
+    border-right: 3px solid #888;
+}
+
+.page3{
+    grid-column: 1;
+    grid-row: 5;
+    
+}
+
+.page4{
+    margin-top: 3rem;
+    /* width: 33ch; */
+}
+
+@media (min-width: 1281px){
+
+    header{
+        padding-left: 100px;
+        height: 100ch;
+        background-size: 400px 200px;
+        background-image:
+        linear-gradient(0deg, transparent 49%, #000 50%, transparent 51%),
+        linear-gradient(-90deg, transparent 49%, #000 50%, transparent 51%);
+    
+    }
+
+    .line1{
+        display: none;
+        background-color: white;
+    }
+    
+    .line2{
+        display: none;
+    }
+    
+    .line3{
+        display: none;
+    }
+
+    .the{
+        font-size: 120px;
+        border: none;
+        margin-left: 10rem;
+       
+        
+    }
+
+    .t{
+        padding-top: 90px;
+    }
+
+    .modern{
+        margin-left: 530px;
+        background-color: white;
+        margin-top: 40px;
+
+      
+    }
+
+    .grid{
+        border: none;
+        margin-left: 1170px;
+    }
+
+    .m{
+        font-size: 120px;
+        padding-right: 0;
+        border: none;
+        
+    }
+
+    .g{
+        font-size: 120px;
+    }
+
+    .r{
+        font-size: 120px;
+    }
+
+    .i{
+        font-size: 120px;
+    }
+
+    .d{
+        font-size: 120px;
+    }
+
+    .author{
+        font-size: 40px;
+        margin-left: 530px;
+        margin-top: 30px;
+        border: none;
+    }
+
+    article{
+        margin-top: 150px;
+    }
+
+    #tool{
+        margin-bottom: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 300px 300px 1fr;
+        grid-template-areas:
+                "aside ..." 
+                "... main" 
+                "section";
+        /* width: 33ch; */
+        
+    }
+
+
+    #tool > main{
+        grid-area: main;
+        grid-column: 2;
+        grid-row: 2;
+        border-left:  3px solid #888;
+        border-top:  3px solid #888;
+        padding-left: 30px;
+
+    }
+    #tool > section{
+        grid-area: section;
+        margin-left: 80px;
+        margin-right: 80px;
+        grid-column: 1/span 2;
+        grid-row: 3;
+        padding-top: 100px;
+        
+      
+    }
+
+    h2{
+        font-size: 80px;
+    }
+
+    article p{
+        font-size: 30px;
+    }
+
+    .element{
+        display: grid;
+        grid-template-columns: 300px 400px 400px ;
+        grid-template-rows: 100px 100px 300px;
+        margin-left: 160px;
+        margin-right: 160px;
+        width: 160ch;
+        
+    }
+
+    .title{
+        grid-column: 1/span 3;
+        grid-row: 1;
+        
+    }
+
+    h3{
+        font-size: 40px;
+        width: 200ch;
+    }
+
+    .rec{
+        grid-column: 1;
+        grid-row: 2;
+        margin-right: 0;
+    }
+
+    .stand{
+        grid-column: 2;
+        grid-row: 2;
+        margin-right: 0;
+        padding-left: 30px;
+    }
+
+    .rep{
+        grid-column: 3;
+        grid-row: 2;
+        margin-right: 0;
+        padding-left: 30px;
+    }
+
+    .page3{
+        grid-column: 1/span 2;
+        grid-row: 3;
+        margin-top: 50px;
+    }
+
+    .page4{
+        margin-left: 160px;
+        margin-top: 100px;
+    }
+
+
+
+    }
+
+
+
