@@ -57,7 +57,7 @@ section p{
 
 
 footer{
-    width: 35ch;
+    width: 38ch;
 }
 
 footer p{
@@ -71,4 +71,23 @@ footer p{
     font-size: 10px;
 }
 
+@media (min-width: 1281px){
+    footer{
+        width: 100ch;
+    }
+    
+    footer p{
+        
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        height: 5ch;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: black;
+        color: white;
+        font-size: 30px;
+}
 
+
+}

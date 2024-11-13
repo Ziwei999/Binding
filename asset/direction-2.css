@@ -30,7 +30,7 @@ aside{
 .element{
     display: grid;
     grid-template-columns: 260px;
-    grid-template-rows: 200px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
     padding-top: 6rem;
     /* margin-right: 20px; */
 }
@@ -42,6 +42,8 @@ aside{
     border-style: solid;
     margin-top: 0;
     padding-left: 20px;
+    padding-top: 25px;
+    padding-right: 10px;
 }
 
 .title h3{
