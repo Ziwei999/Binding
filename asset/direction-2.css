@@ -157,12 +157,12 @@ aside{
 
     main{
         margin-left: 10rem;
-        width: 100ch;
+        width: 80ch;
     }
     .element{
         display: grid;
         grid-template-columns: 300px 400px 400px 400px;
-        grid-template-rows: 170px 100px;
+        grid-template-rows: 170px 200px;
         
     }
 
@@ -226,6 +226,7 @@ aside{
     .page3{
         grid-column: 1/span 4;
         grid-row: 2;
+        width: 100ch;
     }
 
     .page4{
