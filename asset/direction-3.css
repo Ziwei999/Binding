@@ -1,4 +1,6 @@
-
+body{
+    padding: 0;
+}
 
 h1{
     text-align: left;
@@ -71,12 +73,12 @@ span{
 
 
 .author{
+    margin-top: 0;
     margin-left: 80px;
-    margin-right: 20px;
+    margin-right: 79px;
     padding-top: 20px;
     padding-left: 30px;
     font-size: 20px;
-    margin-top: 0;
     border-left: 3px solid #888;
     border-right: 3px solid #888;
 }
@@ -86,11 +88,21 @@ span{
 aside{
     border-right: 3px solid #888;
     border-bottom: 3px solid #888;
+    margin-right: 80px;
     /* background-size: 100px 100px;
     background-image:
     linear-gradient(to right, grey 1px, transparent 1px),
     linear-gradient(to bottom, grey 1px, transparent 1px); */
 }
+
+main{
+    border-left:  3px solid #888;
+    border-top:  3px solid #888;
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+
 
 #tool{
     margin-bottom: 0;
@@ -157,7 +169,58 @@ aside{
     /* width: 33ch; */
 }
 
+#aethetics{
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr 100px 100px 200px;
+}
+
+.title2{
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 50px;
+}
+
+.symbol{
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.symbol p{
+    font-size: 40px;
+    padding-left: 100px;
+}
+
+.quote{
+    display: grid;
+    grid-column: 1;
+    grid-row: 3;
+    border-right: 3px solid #888;
+    border-bottom: 3px solid #888;
+    border-top: 3px solid #888;
+    padding-top: 10px;
+}
+
+
+.page5{
+    display: grid;
+    grid-column: 1;
+    grid-row: 4;
+}
+
+
+blockquote{
+    font-size: 20px;
+}
+
 @media (min-width: 1281px){
+
+    body{
+        padding: 30px;
+    }
 
     header{
         padding-left: 100px;
@@ -195,9 +258,10 @@ aside{
     }
 
     .modern{
-        margin-left: 530px;
+        margin-left: 510px;
         background-color: white;
         margin-top: 40px;
+        
 
       
     }
@@ -254,6 +318,10 @@ aside{
         
     }
 
+    aside{
+        margin-right: 0;
+    }
+
 
     #tool > main{
         grid-area: main;
@@ -262,6 +330,8 @@ aside{
         border-left:  3px solid #888;
         border-top:  3px solid #888;
         padding-left: 30px;
+        margin-left: 0;
+        margin-top: 0;
 
     }
     #tool > section{
@@ -334,6 +404,62 @@ aside{
     .page4{
         margin-left: 160px;
         margin-top: 100px;
+        width: 700px;
+    }
+
+    #aethetics{
+        margin-bottom: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 300px 200px;
+    }
+
+    .title2{
+        display: grid;
+        grid-column: 1/span 2;
+        grid-row: 1;
+        margin-top: 50px;
+        
+    }
+
+    .title2 h2{
+        width: 40ch;
+    }
+    
+    .symbol{
+        display: grid;
+        grid-column: 2;
+        grid-row: 2;
+    }
+    
+    .symbol p{
+        font-size: 100px;
+        padding-left: 100px;
+        padding-top: 0;
+    }
+    
+    .quote{
+        display: grid;
+        grid-column: 1;
+        grid-row: 2;
+        border-right: 3px solid #888;
+        border-bottom: 3px solid #888;
+        border-top: 3px solid #888;
+        padding-top: 10px;
+        margin-top: 100px;
+    }
+
+    
+
+    blockquote{
+        font-size: 50px;
+    }
+    
+    
+    .page5{
+        display: grid;
+        grid-column: 1;
+        grid-row: 3;
     }
 
 
