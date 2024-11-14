@@ -18,8 +18,8 @@ h1{
 
 
 header p{
-    font-size: 30px;
-    margin-left: 25rem;
+    font-size: 15px;
+    margin-left: 13rem;
 }
 
 article{
@@ -31,7 +31,7 @@ article{
 
 main {
     font-size: 18px;
-    /* width: 20ch; */
+  
 }
 
 main p{
