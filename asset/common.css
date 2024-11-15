@@ -57,7 +57,8 @@ section p{
 
 
 footer{
-    width: 38ch;
+    width: 100ch;
+    background-color: black;
 }
 
 footer p{
@@ -65,19 +66,18 @@ footer p{
     padding-bottom: 20px;
     padding-top: 20px;
     height: 5ch;
-    
-    background-color: black;
     color: white;
     font-size: 10px;
 }
 
 @media (min-width: 1281px){
     footer{
-        width: 100ch;
+        width: 300ch;
+        margin-top: 200px;
     }
     
     footer p{
-        
+
         padding-left: 20px;
         padding-bottom: 20px;
         padding-top: 20px;
@@ -86,7 +86,8 @@ footer p{
         margin-right: 20px;
         background-color: black;
         color: white;
-        font-size: 30px;
+        font-size: 20px;
+        width: 100ch;
 }
 
 

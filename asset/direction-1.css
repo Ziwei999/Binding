@@ -207,7 +207,7 @@ blockquote{
     .element{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 100px 100px 100px 150px;
+        grid-template-rows: 100px 100px 100px 100px 200px;
         margin-left: 160px;
         margin-right: 160px;
         width: 160ch;
@@ -253,16 +253,11 @@ blockquote{
         width: 100ch;
     }
 
-    .title2 h2{
-        width: 20ch;
-        
-    }
-
     #aethetics{
         margin-bottom: 0;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr 300px 200px;
+        grid-template-rows: 1fr 300px 300px;
     }
 
     .title2{
@@ -274,7 +269,7 @@ blockquote{
     }
 
     .title2 h2{
-        width: 40ch;
+        width: 33ch;
     }
     
     .symbol{
@@ -309,8 +304,9 @@ blockquote{
     
     .page5{
         display: grid;
-        grid-column: 1;
+        grid-column: 2;
         grid-row: 3;
+        padding-top: 100px;
     }
 
 
