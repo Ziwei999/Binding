@@ -7,6 +7,7 @@ header{
 
 h1{
     text-align: center;
+    font-family: Silkscreen;
 }
 
 aside{
@@ -14,7 +15,13 @@ aside{
     
 }
 
+h2{
+    font-family: "Spicy Rice", serif;
+}
 
+p{
+    font-family: "Geist Mono", monospace;
+}
 
 
 #tool{
@@ -30,10 +37,10 @@ aside{
 
 .element{
     display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-template-columns: 280px;
+    grid-template-rows: 100px 100px 100px 100px 200px;
     padding-top: 6rem;
-    width: 40ch;
+    /* width: 10ch; */
     /* margin-right: 20px; */
 }
 
@@ -98,13 +105,65 @@ aside{
 .page3{
     grid-column: 1;
     grid-row: 5;
-    width: 40ch;
+    /* width: 40ch; */
     
 }
 
 .page4{
     margin-top: 3rem;
-    width: 40ch;
+    /* width: 40ch; */
+}
+
+#aethetics{
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr 100px 100px 300px;
+}
+
+.title2 h2{
+    padding-left: 0;
+}
+
+.title2{
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 50px;
+}
+
+.symbol{
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.symbol p{
+    font-size: 40px;
+    padding-left: 100px;
+}
+
+.quote{
+    display: grid;
+    grid-column: 1;
+    grid-row: 3;
+    border-right: 3px solid #888;
+    border-bottom: 3px solid #888;
+    border-top: 3px solid #888;
+    /* padding-top: 10px; */
+}
+
+
+.page5{
+    display: grid;
+    grid-column: 1;
+    grid-row: 4;
+}
+
+
+blockquote{
+    font-size: 20px;
+    font-family: "Edu AU VIC WA NT Pre", cursive;;
 }
 
 
@@ -240,6 +299,67 @@ aside{
     footer{
         width: 500ch;
     }
+
+    .title2 h2{
+        width: 20ch;
+        
+    }
+
+    #aethetics{
+        margin-bottom: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 300px 200px;
+    }
+
+    .title2{
+        display: grid;
+        grid-column: 1/span 2;
+        grid-row: 1;
+        margin-top: 50px;
+        
+    }
+
+    .title2 h2{
+        width: 20ch;
+    }
+    
+    .symbol{
+        display: grid;
+        grid-column: 2;
+        grid-row: 2;
+    }
+    
+    .symbol p{
+        font-size: 100px;
+        padding-left: 100px;
+        padding-top: 0;
+    }
+    
+    .quote{
+        display: grid;
+        grid-column: 1;
+        grid-row: 2;
+        border-right: 3px solid #888;
+        border-bottom: 3px solid #888;
+        border-top: 3px solid #888;
+        padding-top: 10px;
+        margin-top: 100px;
+    }
+
+    
+
+    blockquote{
+        font-size: 50px;
+    }
+    
+    
+    .page5{
+        display: grid;
+        grid-column: 1;
+        grid-row: 3;
+    }
+
 
     
 }

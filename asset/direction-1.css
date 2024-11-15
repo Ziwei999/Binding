@@ -1,6 +1,11 @@
 h1{
     /* font-size: 40px; */
     text-align: left;
+    font-family: Doto;
+}
+
+h2{
+    font-family: Doto;
 }
 
 
@@ -8,6 +13,10 @@ span{
     border-style: solid;
     padding: 10px;
     line-height: 2;
+}
+
+article p{
+    font-family: Geist Mono;
 }
 
 .author{
@@ -45,7 +54,7 @@ span{
 .element{
     display: grid;
     grid-template-columns: 300px;
-    grid-template-rows: 100px 70px 70px 70px 100px;
+    grid-template-rows: 100px 70px 70px 70px 200px;
     padding-top: 4rem;
     margin-right: 0;
     
@@ -55,6 +64,7 @@ span{
     grid-column: 1;
     grid-row: 1;
     margin-top: 0;
+    
   
 }
 
@@ -95,6 +105,54 @@ span{
     /* width: 33ch; */
 }
 
+#aethetics{
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr 100px 100px 200px;
+}
+
+.title2{
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 50px;
+}
+
+.symbol{
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.symbol p{
+    font-size: 40px;
+    padding-left: 100px;
+}
+
+.quote{
+    display: grid;
+    grid-column: 1;
+    grid-row: 3;
+    border-right: 3px solid #888;
+    border-bottom: 3px solid #888;
+    border-top: 3px solid #888;
+    padding-top: 10px;
+}
+
+
+.page5{
+    display: grid;
+    grid-column: 1;
+    grid-row: 4;
+}
+
+
+blockquote{
+    font-size: 20px;
+    font-family: Caveat;
+}
+
 @media (min-width: 1281px){
     header{
         padding-left: 30rem;
@@ -114,10 +172,16 @@ span{
     }
     h2{
         font-size: 80px;
+        text-align: left;
+        letter-spacing: 1px;
+        word-spacing: 0.8;
+        width: 15ch;
+        padding-left: 40px;
     }
 
     article p{
         font-size: 30px;
+        
     }
 
     
@@ -188,6 +252,67 @@ span{
         margin-left: 160px;
         width: 100ch;
     }
+
+    .title2 h2{
+        width: 20ch;
+        
+    }
+
+    #aethetics{
+        margin-bottom: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 300px 200px;
+    }
+
+    .title2{
+        display: grid;
+        grid-column: 1/span 2;
+        grid-row: 1;
+        margin-top: 50px;
+        
+    }
+
+    .title2 h2{
+        width: 40ch;
+    }
+    
+    .symbol{
+        display: grid;
+        grid-column: 2;
+        grid-row: 2;
+    }
+    
+    .symbol p{
+        font-size: 100px;
+        padding-left: 100px;
+        padding-top: 0;
+    }
+    
+    .quote{
+        display: grid;
+        grid-column: 1;
+        grid-row: 2;
+        border-right: 3px solid #888;
+        border-bottom: 3px solid #888;
+        border-top: 3px solid #888;
+        padding-top: 10px;
+        margin-top: 100px;
+    }
+
+    
+
+    blockquote{
+        font-size: 50px;
+    }
+    
+    
+    .page5{
+        display: grid;
+        grid-column: 1;
+        grid-row: 3;
+    }
+
 
 
 

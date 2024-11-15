@@ -4,6 +4,18 @@ body{
 
 h1{
     text-align: left;
+    font-family: "Edu AU VIC WA NT Guides", serif;
+}
+
+h2{
+    font-family: "Audiowide", serif;
+    width: 8ch;
+    
+}
+
+p{
+    font-family: "Sour Gummy", sans-serif;
+    width: 25ch;
 }
 
 .t{
@@ -118,7 +130,7 @@ main{
 .element{
     display: grid;
     grid-template-columns: 300px;
-    grid-template-rows: 100px 70px 70px 70px 100px;
+    grid-template-rows: 100px 70px 70px 70px 200px;
     padding-top: 4rem;
     margin-right: 0;
     
@@ -173,7 +185,7 @@ main{
     margin-bottom: 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 1fr 100px 100px 200px;
+    grid-template-rows: 1fr 100px 100px 300px;
 }
 
 .title2{
@@ -201,7 +213,8 @@ main{
     border-right: 3px solid #888;
     border-bottom: 3px solid #888;
     border-top: 3px solid #888;
-    padding-top: 10px;
+    /* padding-top: 10px; */
+    width: 36ch;
 }
 
 
@@ -214,6 +227,7 @@ main{
 
 blockquote{
     font-size: 20px;
+    font-family: "Pacifico", cursive;
 }
 
 @media (min-width: 1281px){
@@ -231,6 +245,8 @@ blockquote{
         linear-gradient(-90deg, transparent 49%, #000 50%, transparent 51%);
     
     }
+
+  
 
     .line1{
         display: none;
@@ -305,10 +321,14 @@ blockquote{
         margin-top: 150px;
     }
 
+    h2{
+        width: 10ch;
+    }
+
     #tool{
         margin-bottom: 0;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 800px 800px;
         grid-template-rows: 300px 300px 1fr;
         grid-template-areas:
                 "aside ..." 
@@ -423,7 +443,7 @@ blockquote{
     }
 
     .title2 h2{
-        width: 40ch;
+        width: 20ch;
     }
     
     .symbol{
@@ -453,6 +473,7 @@ blockquote{
 
     blockquote{
         font-size: 50px;
+        
     }
     
     
