@@ -42,22 +42,23 @@ span{
 }
 .line2{
     border-bottom: 3px solid #888;
-    padding-left: 64px;
+    /* padding-left: 64px; */
+    margin-left: 40px;
     
 }
 
 .line3{
     border-right: 3px solid #888;
     border-bottom: 3px solid #888;
-    padding-left: 64px;
-    padding-top: 20px;
+    padding-left: 180px;
+    padding-top: 10px;
+    /* margin-left: 30px; */
 }
 
 
 
 .modern{
-    
-    margin-top: 20px;
+    margin-top: 40px;
     /* border-right: 3px solid #888;
     border-bottom: 3px solid #888; */
 }
@@ -72,14 +73,16 @@ span{
 }
 
 .line{
-    margin-top: 0;
+    margin-top: 20px;
     
 }
 
 .grid{
     border-right: 3px solid #888;
     border-bottom: 3px solid #888;
-    padding-left: 117px;
+    border-left: 3px solid #888;
+    border-top: 3px solid #888;
+    padding-left: 70px;
     padding-top: 10px;
 }
 
@@ -91,8 +94,10 @@ span{
     padding-top: 20px;
     padding-left: 30px;
     font-size: 20px;
+    width: 6ch;
     border-left: 3px solid #888;
     border-right: 3px solid #888;
+   
 }
 
 
@@ -395,8 +400,8 @@ blockquote{
 
     .element{
         display: grid;
-        grid-template-columns: 300px 400px 400px ;
-        grid-template-rows: 100px 100px 200px;
+        grid-template-columns: 300px 500px 400px ;
+        grid-template-rows: 100px 200px 200px;
         margin-left: 160px;
         margin-right: 160px;
         width: 160ch;
