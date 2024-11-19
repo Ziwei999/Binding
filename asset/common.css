@@ -5,59 +5,31 @@ body{
 
 
 
-h1{
-    font-size: 40px;
-    /* text-align: center; */
-    /* max-width: 10ch; */
-    /* margin-left: 1rem; */
-    margin-right: 4rem;
-    margin-bottom: 2px;
-    line-height: 1.5;
-}
 
 
 
-header p{
-    font-size: 15px;
-    margin-left: 13rem;
-}
 
-article{
-    padding-top: 10px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    /* width: 15ch; */
-}
-
-main {
+/* main {
     font-size: 18px;
   
 }
 
 main p{
     padding-top: 10px;
-}
-
-h2{
-    font-size: 30px;
-    width: 15ch;
-    margin-left: 20px;
-    text-align: center;
-}
-
-h3{
-    font-size: 22px;
-    /* width: 20ch; */
-}
+} */
 
 
-section p{
-    font-size: 18px;
-}
+
+
+
+
+/* section p{
+    font-size: 13px;
+} */
 
 
 footer{
-    width: 100ch;
+    width: 45ch;
     background-color: black;
 }
 
@@ -72,7 +44,7 @@ footer p{
 
 @media (min-width: 1281px){
     footer{
-        width: 300ch;
+        width: 30ch;
         margin-top: 200px;
     }
     
@@ -87,7 +59,7 @@ footer p{
         background-color: black;
         color: white;
         font-size: 20px;
-        width: 100ch;
+        width: 10ch;
 }
 
 
