@@ -1,547 +1,175 @@
+body{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.navbar{
+    overflow: hidden;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    padding: 0;
+    
+}
+.navbar a {
+    float: right;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #EED819;
+  }
+
+  
+
+.navbar .dropdown1 a{
+    background-color: #2B28D4;
+    color: white;
+}
+
+.navbar .dropdown2 a{
+    background-color: #0D8A21;
+    color: white;
+  }
+
+.navbar .dropdown3 a{
+    background-color: #8A230D;
+    color: white;
+}
+  
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+  
+.navbar a:hover, .dropdown:hover {
+    background-color: grey;
+}
+  
+.dropdown1 .dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 16px;
+}
+
+.dropdown2 .dropdown-content{
+    display: none;
+    position: absolute;
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+.dropdown3 .dropdown-content{
+    display: none;
+    position: absolute;
+    margin-top: 16px;
+    margin-left: 180px;
+}
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    margin-top: 30px;
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 header{
-    background-size: 40px 40px;
-    background-image:
-    linear-gradient(to right, grey 1px, transparent 1px),
-    linear-gradient(to bottom, grey 1px, transparent 1px);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr 80px  repeat(2, 50px);
 }
 
 h1{
-    text-align: center;
-    font-family: Silkscreen;
+    font-size: 40px;
+    text-align: left;
 }
 
-aside{
-    display: flex;
-    
-}
-
-h2{
-    font-family: "Spicy Rice", serif;
-}
-
-p{
-    font-family: "Geist Mono", monospace;
-}
-
-
-#tool{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas:
-            "aside" "main " "section";
-    
-            
-}
-
-
-.element{
-    display: grid;
-    grid-template-columns: 280px;
-    grid-template-rows: 100px 100px 100px 100px 200px;
-    padding-top: 6rem;
-    /* width: 10ch; */
-    /* margin-right: 20px; */
-}
-
-
-.title{
+.header{
     grid-column: 1;
     grid-row: 1;
+    
+}
+
+.subheader{
+    grid-column: 1;
+    grid-row: 2;
     border-style: solid;
-    margin-top: 0;
-    padding-left: 20px;
-    padding-top: 25px;
+    border-color: black;
+    border-width: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.author{
+    grid-column: 1;
+    grid-row: 3;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    padding-left: 10px;
     padding-right: 10px;
 }
 
-.title h3{
-    margin-top: 0;
-}
-
-
-
-.rec{
-    grid-column: 1;
-    grid-row: 2;
-    margin-top: 0;
-    margin-left: 0;
-    border-style: solid;
-    padding-left: 20px;
-}
-
-.rec p{
-    margin-top: 0;
-    font-size: 25px;
-    padding-top: 30px;
-}
-
-.stand{
-    grid-column: 1;
-    grid-row: 3;
-    margin-left: 0;
-    margin-top: 0;
-    border-style: solid;
-    padding-left: 20px;
-}
-
-.stand p{
-    font-size: 25px;
-}
-
-.rep{
+.time{
     grid-column: 1;
     grid-row: 4;
-    margin-left: 0;
     border-style: solid;
-    margin-top: 0;
-    padding-left: 20px;
+    border-color: black;
+    border-width: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+   
 }
 
-.rep p{
-    font-size: 25px;
+#section1{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 150px 1fr repeat(2, 150px) 100px 150px 1fr;
+}
+
+aside{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.page1{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.page2{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.quote1{
+    grid-column: 1;
+    grid-row: 4;
 }
 
 .page3{
     grid-column: 1;
     grid-row: 5;
-    /* width: 40ch; */
-    
+}
+
+.quote2{
+    grid-column: 1;
+    grid-row: 6;
 }
 
 .page4{
-    margin-top: 3rem;
-    /* width: 40ch; */
-}
-
-#aethetics{
-    margin-bottom: 0;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 1fr 100px 100px 300px;
-}
-
-.title2 h2{
-    padding-left: 0;
-}
-
-.title2{
-    display: grid;
     grid-column: 1;
-    grid-row: 1;
-    margin-top: 50px;
-}
-
-.symbol{
-    display: grid;
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.symbol p{
-    font-size: 40px;
-    padding-left: 100px;
-}
-
-.quote{
-    display: grid;
-    grid-column: 1;
-    grid-row: 3;
-    border-right: 3px solid #888;
-    border-bottom: 3px solid #888;
-    border-top: 3px solid #888;
-    /* padding-top: 10px; */
-}
-
-
-.page5{
-    display: grid;
-    grid-column: 1;
-    grid-row: 4;
-}
-
-
-blockquote{
-    font-size: 20px;
-    font-family: "Edu AU VIC WA NT Pre", cursive;;
-}
-
-
-
-
-@media (min-width: 1281px){
-
-    article{
-        padding-left: 10rem;
-        padding-right: 10rem;
-    }
-    h1{
-        font-size: 180px;
-        margin-left: 20rem;
-        margin-right: 20rem;
-    }
-
-    header p{
-        margin-left: 80rem;
-        font-size: 50px;
-    }
-    h2{
-        font-size: 80px;
-        width: 500px;
-        
-    }
-
-    h3{
-        font-size: 40px;
-    }
-
-    main p{
-        font-size: 30px;
-        padding-top: 2rem;
-    }
-
-    #tool{
-        display: grid;
-        grid-template-columns: repeat(1fr, 1fr);
-        grid-template-rows: 500px 1fr;
-        grid-template-areas:
-            "aside main"
-            "... section";
-    }
-
-    #tool > section{
-        grid-area: section;
-        padding-left: 150px;
-    }
-
-    main{
-        margin-left: 10rem;
-        width: 80ch;
-    }
-    .element{
-        display: grid;
-        grid-template-columns: 300px 400px 400px 400px;
-        grid-template-rows: 170px 200px;
-        
-    }
-
-    .title{
-        grid-column: 1;
-        grid-row: 1;
-        border-style: solid;
-        padding-top: 30px;
-        width: 400px;
-        padding-left: 30px;
-    }
-
-    .rec{
-        grid-column: 2;
-        grid-row: 1;
-        border-style: solid;
-        padding-top: 40px;
-        width: 300px;
-        margin-left: 140px;
-        padding-left: 80px;
-       
-    }
-
-    .rec p{
-        font-size: 30px;
-        padding-top: 0;
-    }
-
-    .stand{
-        grid-column: 3;
-        grid-row: 1;
-        border-style: solid;
-        padding-top: 5px;
-        margin-left: 130px;
-        width: 300px;
-        margin-top: 0;
-    }
-
-    .stand p{
-        font-size: 30px;
-        padding-top: 0;
-    }
-
-    .rep{
-        grid-column: 4;
-        grid-row: 1;
-        border-style: solid;
-        padding-top: 0;
-        width: 300px;
-        padding-left: 30px;
-        margin-left: 60px;
-        padding-right: 30px;
-        margin-top: 0;
-    }
-
-    .rep p{
-        font-size: 30px;
-        padding-top: 0;
-    }
-
-    .page3{
-        grid-column: 1/span 4;
-        grid-row: 2;
-        width: 100ch;
-    }
-
-    .page4{
-        width: 180ch;
-    }
-
-    section p{
-        font-size: 30px;
-    }
-
-    footer{
-        width: 500ch;
-    }
-
-    .title2 h2{
-        width: 20ch;
-        
-    }
-
-    #aethetics{
-        margin-bottom: 0;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr 300px 200px;
-    }
-
-    .title2{
-        display: grid;
-        grid-column: 1/span 2;
-        grid-row: 1;
-        margin-top: 50px;
-        
-    }
-
-    .title2 h2{
-        width: 20ch;
-    }
-    
-    .symbol{
-        display: grid;
-        grid-column: 2;
-        grid-row: 2;
-    }
-    
-    .symbol p{
-        font-size: 100px;
-        padding-left: 100px;
-        padding-top: 0;
-    }
-    
-    .quote{
-        display: grid;
-        grid-column: 1;
-        grid-row: 2;
-        border-right: 3px solid #888;
-        border-bottom: 3px solid #888;
-        border-top: 3px solid #888;
-        padding-top: 10px;
-        margin-top: 100px;
-    }
-
-    
-
-    blockquote{
-        font-size: 50px;
-    }
-    
-    
-    .page5{
-        display: grid;
-        grid-column: 1;
-        grid-row: 3;
-    }
-
-
-    
-}
-
-@media (min-width: 1100px) and (max-width: 1280px){
-    h1{
-        font-size: 180px;
-        margin-left: 10rem;
-        margin-right: 20rem;
-    }
-
-
-    header p{
-        margin-left: 50rem;
-        font-size: 50px;
-    }
-
-    h2{
-        font-size: 50px;
-        width: 300px;
-        
-    }
-    #tool{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
-        grid-template-areas:
-            "aside main main";
-    }
-
-    .element{
-        display: grid;
-        grid-template-columns: 100px 100px ;
-        grid-template-rows: 170px 170px 10px;
-        margin-left: 5rem;
-        
-    }
-
-    .title{
-        grid-column: 1;
-        grid-row: 1;
-        border-style: solid;
-        padding-top: 0;
-        width: 400px;
-        padding-left: 50px;
-        
-    }
-
-    .rec{
-        grid-column: 2;
-        grid-row: 1;
-        border-style: solid;
-        padding-top: 0;
-        width: 480px;
-        margin-left: 350px;
-        padding-left: 80px;
-        
-    }
-
-    .rec p{
-        font-size: 30px;
-    }
-
-    .stand{
-        grid-column: 1;
-        grid-row: 2;
-        border-style: solid;
-        padding-top: 0;
-        padding-left: 50px;
-        width: 400px;
-        margin-left: 0;
-    }
-
-    .stand p{
-        font-size: 30px;
-        margin-top: auto;
-    }
-
-    .rep{
-        grid-column: 2;
-        grid-row: 2;
-        border-style: solid;
-        padding-top: 0;
-        width: 450px;
-        padding-left: 80px;
-        margin-left: 350px;
-        padding-right: 30px;
-        
-    }
-
-    .rep p{
-        font-size: 30px;
-        padding-bottom: 30px;
-    }
-
-    .page3{
-        grid-column: 1/ span 2;
-        grid-row: 3;
-        width: 800px;
-    }
-
-    .page4{
-        margin-top: 3rem;
-    }
-
-
-}
-
-@media (min-width: 950px) and (max-width: 1099px){
-    .element{
-        display: grid;
-        grid-template-columns: 100px 100px 100px;
-        grid-template-rows: 150px 170px 10px;
-        margin-left: 5rem;
-        
-    }
-
-    .title{
-        grid-column: 1/span 3;
-        grid-row: 1;
-        border-style: solid;
-        padding-top: 0;
-        width: 500px;
-        padding-left: 50px;
-        
-    }
-
-    .rec{
-        grid-column: 1/span 1;
-        grid-row: 2;
-        border-style: solid;
-        padding-top: 0;
-        width: 150px;
-        margin-left: 0;
-        padding-left: 40px;
-        
-    }
-
-    .rec p{
-        font-size: 20px;
-    }
-
-    .stand{
-        grid-column: 2/span 1;
-        grid-row: 2;
-        border-style: solid;
-        padding-top: 0;
-        padding-left: 50px;
-        width: 150px;
-        margin-left: 90px;
-    }
-
-    .stand p{
-        font-size: 20px;
-        margin-top: auto;
-    }
-
-    .rep{
-        grid-column: 2/span 1;
-        grid-row: 2;
-        border-style: solid;
-        padding-top: 0;
-        width: 150px;
-        padding-left: 80px;
-        margin-left: 350px;
-        padding-right: 30px;
-        
-    }
-
-    .rep p{
-        font-size: 20px;
-        padding-bottom: 30px;
-    }
-
-    .page3{
-        grid-column: 1/ span 3;
-        grid-row: 3;
-        width: 800px;
-    }
-
-    .page4{
-        margin-top: 3rem;
-        
-    }
+    grid-row: 7;
 }
