@@ -136,12 +136,12 @@ li{
     margin-bottom: 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 110px 1fr 80px 100px 70px 200px;
+    /* grid-template-rows: 110px 1fr 80px 100px 70px 200px;
     background: linear-gradient(90deg, blue 50%, transparent 50%),  linear-gradient(0deg, blue 50%, transparent 50%), linear-gradient(0deg, blue 50%, transparent 50%);
     background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
     background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
     padding: 10px;
-    animation: border-dance 5s infinite linear;
+    animation: border-dance 5s infinite linear; */
 
     
 }
@@ -149,14 +149,14 @@ li{
 
 
 
-@keyframes border-dance {
+/* @keyframes border-dance {
     0% {
       background-position: 0px 0px, 300px 116px, 0px 150px, 216px 0px;
     }
     100% {
       background-position: 300px 0px, 0px 116px, 0px 0px, 216px 150px;
     }
-  }
+  } */
 
 
 
@@ -184,7 +184,7 @@ main{
 .title1{
     grid-column: 1;
     grid-row: 1;
-    background-color: #2B28D4;
+    background-color: #0D8A21;
    
 }
 
@@ -389,7 +389,7 @@ aside{
 }
 
 .title3{
-    background-color: #8A230D;
+    background-color: #0D8A21;
 }
 
 main{
