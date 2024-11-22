@@ -1,88 +1,10 @@
 body{
     margin-left: 20px;
     margin-right: 20px;
-}
-.navbar{
-    overflow: hidden;
-    z-index: 1;
-    position: sticky;
-    top: 0;
-    padding: 0;
+    background-color: #FDE7BB;
     
 }
-.navbar a {
-    float: right;
-    font-size: 16px;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    background-color: #EED819;
-  }
 
-  
-
-.navbar .dropdown1 a{
-    background-color: #2B28D4;
-    color: white;
-}
-
-.navbar .dropdown2 a{
-    background-color: #0D8A21;
-    color: white;
-  }
-
-.navbar .dropdown3 a{
-    background-color: #8A230D;
-    color: white;
-}
-  
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-  
-.navbar a:hover, .dropdown:hover {
-    background-color: grey;
-}
-  
-.dropdown1 .dropdown-content {
-    display: none;
-    position: absolute;
-    margin-top: 16px;
-}
-
-.dropdown2 .dropdown-content{
-    display: none;
-    position: absolute;
-    margin-top: 16px;
-    margin-left: 16px;
-}
-
-.dropdown3 .dropdown-content{
-    display: none;
-    position: absolute;
-    margin-top: 16px;
-    margin-left: 180px;
-}
-  
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    margin-top: 30px;
-}
-  
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-  
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 
 header{
     display: grid;
@@ -93,6 +15,40 @@ header{
 h1{
     font-size: 40px;
     text-align: left;
+    font-family: "DM Serif Display", serif;
+}
+
+h2{
+    font-size: 20px;
+    font-family: "DM Serif Display", serif;
+    background-color:#2B28D4;
+    color:white;
+    padding: 20px;
+    
+}
+
+blockquote{
+    font-family: "Cormorant Infant", serif;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.5;
+    background-color:#FFD23F;
+    box-shadow: 10px 10px 5px lightblue;
+    padding: 20px;
+}
+
+article p{
+    font-family: "Cormorant Infant", serif;
+    font-weight: 500;
+    line-height: 1.5;
+    
+}
+
+aside{
+    position: sticky;
+    top: 0;
+    padding: 0;
 }
 
 .header{
@@ -109,7 +65,12 @@ h1{
     border-width: 1px;
     padding-left: 10px;
     padding-right: 10px;
+    background-color: #8A230D;
     
+}
+
+.subheader p{
+    color: white;
 }
 
 .author{
@@ -120,6 +81,11 @@ h1{
     border-width: 1px;
     padding-left: 10px;
     padding-right: 10px;
+    background-color: #2B28D4;
+}
+
+.author p{
+    color: white;
 }
 
 .time{
@@ -130,16 +96,23 @@ h1{
     border-width: 1px;
     padding-left: 10px;
     padding-right: 10px;
+    background-color: #0D8A21;
    
+}
+
+.time p{
+    
+    color: white;
 }
 
 #section1{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 150px 1fr repeat(2, 150px) 100px 150px 1fr;
+    grid-template-rows: 200px 1fr 200px 300px 100px 350px 1fr;
+    margin-top: 50px;
 }
 
-aside{
+.title{
     grid-column: 1;
     grid-row: 1;
 }
@@ -172,4 +145,326 @@ aside{
 .page4{
     grid-column: 1;
     grid-row: 7;
+}
+
+#section2{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 200px) 1fr;
+    margin-top: 50px;
+}
+
+.title1{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.quote3{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.page5{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.page5 p{
+    border-bottom: 3px solid black ;
+    padding-bottom: 20px;
+}
+
+#section3{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 200px 150px 1fr 150px 250px 400px;
+    margin-top: 50px;
+}
+
+.title2{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.quote4{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.page5{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.page7{
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.quote5{
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.page8{
+    grid-column: 1;
+    grid-row: 6;
+}
+
+#response{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 100px 1fr;
+}
+
+.title3{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.list{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.list li{
+    padding-top: 20px;
+    font-family: "Cormorant Infant", serif;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+@media (min-width: 1024px){
+    body{
+        padding-left: 400px;
+        padding-right: 400px;
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    h1{
+        font-size: 80px;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    article p{
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    header{
+        display: grid;
+        grid-template-columns: 500px 500px;
+        grid-template-rows: 1fr 100px 100px;
+    }
+
+    aside{
+        padding-right: 60px;
+    }
+
+    .header{
+        grid-column: 1/span 2;
+        grid-row: 1;
+    }
+
+    .subheader{
+        grid-column: 1/span 2;
+        grid-row: 2;
+    }
+
+    .subheader p{
+        font-size: 30px;
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .author{
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .author p{
+        font-size: 30px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .time{
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .time p{
+        font-size: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #section1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 200px 250px 100px 300px  1fr;
+        margin-top: 50px;
+    }
+
+    .title{
+        grid-column: 1;
+        grid-row: 1;
+        
+    }
+
+    .page1{
+        grid-column: 2;
+        grid-row: 1;
+        border-left: 10px dashed black;
+        padding-left: 60px;
+    }
+
+    .page2{
+        grid-column: 2;
+        grid-row: 2;
+        border-left: 10px dashed black;
+        padding-left: 60px;
+    }
+    .quote1{
+        grid-column: 2;
+        grid-row: 3;
+        border-left: 10px dashed black;
+        padding-left: 60px;
+    }
+
+    .page3{
+        grid-column: 2;
+        grid-row: 4;
+        border-left: 10px dashed black;
+        padding-left: 60px;
+    }
+
+    .quote2{
+        grid-column: 2;
+        grid-row: 5;
+        border-left: 10px dashed black;
+        padding-left: 60px;
+    }
+
+    .page4{
+        grid-column: 2;
+        grid-row: 6;
+        border-left: 10px dashed black;
+        padding-left: 60px;
+    }
+
+    #section2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 300px 100px 1fr;
+        margin-top: 0;
+       
+    }
+
+    .title1{
+        grid-column: 1;
+        grid-row: 1;
+    }
+     
+    .quote3{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .page5{
+        grid-column: 2;
+        grid-row: 1/span 3;
+        border-left: 10px dashed black;
+        border-top: 10px solid black;
+        padding-left: 60px;
+        padding-top: 60px;
+    }
+
+    #section3{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 300px 100px 350px 150px 200px 1fr;
+        margin-top: 0;
+    }
+
+    .title2{
+        grid-column: 1;
+        grid-row: 1;
+       
+    }
+
+    .quote4{
+        grid-column: 1;
+        grid-row: 2;
+
+
+    }
+
+    .page6{
+        grid-column: 2;
+        grid-row: 1/span 3;
+        border-left: 10px dashed black;
+        border-top: 10px solid black;
+        padding-left: 60px;
+        padding-top: 60px;
+
+    }
+
+    .page7{
+        grid-column: 2;
+        grid-row: 4;
+        border-left: 10px dashed black;
+        padding-left: 60px;
+        
+
+    }
+
+    .quote5{
+        grid-column: 2;
+        grid-row: 5;
+        border-left: 10px dashed black;
+        padding-left: 60px;
+
+    }
+
+    .page8{
+        grid-column: 2;
+        grid-row: 6;
+        border-left: 10px dashed black;
+        padding-left: 60px;
+
+    }
+
+    #response{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 150px 1fr;
+    }
+
+    .title3{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .list{
+        display: grid;
+        grid-column: 2;
+        grid-row: 1/span 2;
+        border-top: 10px solid black;
+        border-left: 10px dashed black;
+        padding-left: 60px;
+        padding-top: 60px;
+
+    }
+
+
+    .list li{
+        padding-top: 30px;
+    }
 }
