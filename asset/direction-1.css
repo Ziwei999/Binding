@@ -4,13 +4,11 @@ header {
     grid-template-columns: 100px 230px;
     grid-template-rows: repeat(2, 150px);
 	justify-content: center;
-    /* border: 5px solid black; */
+    
   
 }
 
-h1{
-    /* color: black; */
-}
+
 
 h2{
    
@@ -48,9 +46,9 @@ li{
     grid-column: 1/span 2;
     grid-row: 3;
     color: black;
-    border-right: 3px solid black;
-    border-left: 3px solid black;
-    border-bottom: 3px solid black;
+    border: 3px solid black;
+    border-top: none;
+    
     
 }
 
@@ -78,12 +76,12 @@ li{
 }
 
 .modern{
-    padding-left: 10px;
+    padding-left: 15px;
     grid-column: 2;
     grid-row: 1;
     background-color: #d53e33;
-    border-top: 3px solid black;
-    border-right: 3px solid black;
+    border: 3px solid black;
+    border-left: none;
     /* border-top: 5px solid black; */
 
 
@@ -94,7 +92,7 @@ li{
     background-color: #fbb300;
     border-right: 3px solid black;
     border-bottom: 3px solid black;
-    border-top: 3px solid black;
+    /* border-top: 3px solid black; */
     grid-column: 2;
     grid-row: 2;
     /* padding-top: 20px; */
@@ -199,6 +197,7 @@ li{
     grid-template-rows: 100px 100px;
     grid-column: 1;
     grid-row: 6;
+    padding: 20px;
     /* border: 5px solid black; */
 }
 .yellow{
@@ -318,13 +317,277 @@ main{
     grid-row: 4;
 }
 
+@media(min-width: 500px){
+    header {
+        display: grid;
+        grid-template-columns: 110px 280px;
+        grid-template-rows: repeat(2, 150px);
+        justify-content: center;
+        
+      
+    }
+
+    h1{
+        font-size: 2.3rem;
+    }
+} 
+
+@media (min-width: 783px) {
+    header {
+        display: grid;
+        grid-template-columns: 200px 350px;
+        grid-template-rows: repeat(2, 200px);
+        justify-content: center;
+    }
+
+    h1{
+        font-size: 2.8rem;
+       
+    }
+
+    .the{
+        padding-left: 40px;
+    }
+
+    h3{
+        font-size: 30px;
+    }
+    .author p{
+        font-size: 2.5rem;
+    }
+}
 
 
-@media (min-width: 1281px){
+@media (min-width: 1024px) {
+    header{
+        display: grid;
+        grid-template-columns: 200px 400px;
+        grid-template-rows:repeat(3, 200px);
+    }
+    
+    span{
+        text-align: left;
+        font-size: 130px;
+        
+    }
+    h1{
+        /* font-size: 100px; */
+        /* text-align: left; */
+        font-size: 3rem;
+        padding: 30px;
+    }
+ 
+
+    h3{
+        font-size: 30px;
+    }
+
+    li{
+        font-size: 20px;
+        padding-top: 25px;
+    }
+
+
+}
+
+@media (min-width: 1139px) {
+    #section1{
+        
+        
+        grid-template-rows: 100px 1fr 300px 100px 250px;
+        margin-top: 50px;
+        margin-left: 0;
+    }
+
+    aside{
+       
+        /* background-color: #0D8A21; */
+        /* border-style: solid;
+        border-color: black;
+        border-width: 5px; */
+        border-style: none;
+        margin-right: 30px;
+        padding: 0;
+        
+    }
+
+   
+
+    .page{
+        grid-column: 2;
+        grid-row: 2;
+        /* padding-top: 100px; */
+    }
+
+
+    .sentence{
+        grid-column: 2;
+        grid-row: 3;
+        
+    }
+
+    .line{
+        grid-column: 2;
+        grid-row: 3;
+        padding-top: 100px;
+    }
+
+    .line li{
+        padding-top: 20px;
+        font-size: 20px;
+    }
+
+    .page1{
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    
+
+    #section2{
+        grid-template-rows: 100px 200px 180px 650px 400px 200px 300px 600px 470px 1fr ;
+    }
+
+
+    .symbol{
+        grid-column: 2;
+        grid-row: 2;
+        padding-left: 20px;
+    }
+
+    .quote{
+        grid-column: 1;
+        grid-row: 2;
+        border: none;
+        
+        /* padding-left: 40px; */
+    }
+
+    .symbol p{
+        font-size: 100px;
+    }
+
+    blockquote{
+      
+        padding-top: 40px;
+        padding-left: 20px;
+        font-size: 30px;
+    }
+
+    .page2{
+        grid-column: 2;
+        grid-row: 3;
+        padding-left: 30px;
+    }
+
+    .grid-line{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 150px 150px;
+        grid-column: 1/span 2;
+        grid-row: 5;
+        /* margin-right: 200px; */
+        border-style: solid;
+        border-width: 10px;
+        padding-left: 30px;
+        border-radius: 5px;
+    }
+
+    .page3{
+        grid-column: 2;
+        grid-row: 4;
+        padding-left: 30px;
+
+    }
+
+  
+
+    .sentence1{
+        grid-column: 2;
+        grid-row: 6;
+        padding-left: 30px;
+    }
+
+    .list{
+        grid-column: 2;
+        grid-row: 7;
+        padding-left: 30px;
+    }
+
+    .page4{
+        grid-column: 2;
+        grid-row: 8;
+        padding-left: 30px;
+        padding-top: 40px;
+    }
+
+    .list1{
+        grid-column: 2;
+        grid-row: 9;
+        padding-left: 30px;
+    }
+
+    .page5{
+        grid-column: 2;
+        grid-row: 10;
+        padding-left: 30px;
+        padding-top: 40px;
+    }
+
+
+    #rectangle{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows:repeat(2,250px);
+        margin-top: 50px;
+    }
+    
+    .square{
+        height: 200px;
+        width: 200px;
+        
+    }
+    
+    #rectangle > .square{
+        background-color: gray;
+        border-color: black;
+        margin: 0;
+    }
+
+    #section3{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 100px 150px 900px 1fr;
+    }
+
+    
+    .sentence2{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .list2{
+        grid-column: 2;
+        grid-row: 3;
+
+        box-shadow: 10px 10px 5px lightblue;
+        padding: 20px;
+
+        /* width: 70ch; */
+    }
+
+    .final{
+        grid-column: 2;
+        grid-row: 4;
+        padding-top: 40px;
+    }
+}
+
+@media (min-width: 1440px){
 
     header{
         display: grid;
-        grid-template-columns: 250px 600px;
+        grid-template-columns: 200px 600px;
         grid-template-rows: 200px 200px 200px;
     }
     
@@ -336,7 +599,8 @@ main{
     h1{
         /* font-size: 100px; */
         /* text-align: left; */
-        padding: 30px;
+        font-size: 4.1rem;
+        padding-left: 20px;
     }
  
 
@@ -353,7 +617,7 @@ main{
     .the{
         grid-column: 1;
         grid-row: 1/span 2;
-      
+        padding-left: 5px;
         /* padding-lefts: 20px; */
     }
 
@@ -569,15 +833,5 @@ main{
         grid-row: 4;
         padding-top: 40px;
     }
-
-
-
-
-
-   
-
-
-
-
 
 }

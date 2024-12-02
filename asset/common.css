@@ -1,11 +1,10 @@
 body{
-    background-color: #EDDCBE;
-    
-    
+    background-color: #EDDCBE; 
 
 }
 header{
     display: grid;
+    padding: 20px;
 }
 
 .navbar{
@@ -15,6 +14,9 @@ header{
     top: 0;
     padding-bottom: 20px;
     margin-right: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
     /* padding: 0; */
     
 }
@@ -27,6 +29,7 @@ header{
     /* padding-left: 14px; */
     text-decoration: none;
     background-color: #fbb300;
+    width: -webkit-fill-available;
   }
 
   
@@ -34,16 +37,19 @@ header{
 .navbar .dropdown1 a{
     background-color: #377af5;
     color: white;
+    width: -webkit-fill-available;
 }
 
 .navbar .dropdown2 a{
     background-color: #0D8A21;
     color: white;
+    width: -webkit-fill-available;
   }
 
 .navbar .dropdown3 a{
     background-color: #d53e33;
     color: white;
+    width: -webkit-fill-available;
 }
   
 .dropdown {
@@ -128,7 +134,7 @@ header, .list, .list1, .list2,.grid-line, blockquote{
 
 h1{
     /* font-size: 38px; */
-    font-size: 33px;
+    font-size: 30px;
     text-align: left;
     /* font-family: "Baskerville", serif; */
     font-family: Didot;
@@ -147,11 +153,10 @@ h2{
 
 article{
     margin-top: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 5px;
 }
 
-article p, li{
+article p, li, .author p{
     font-size: 20px;
     font-family: Minion;
     font-weight: 400;
@@ -162,7 +167,7 @@ article p, li{
 
 aside{
     position: sticky;
-    top: 1.9rem;
+    top: 1.6rem;
     padding: 0;
    
 }
@@ -212,11 +217,229 @@ footer p{
 }
 
 
-
-@media (min-width: 1548px){
+@media(min-width: 425px){
     body{
-        padding-left: 18rem;
-        padding-right: 18rem;
+        padding-left: 3%;
+        padding-right: 3%;
+      
+    }
+}
+
+@media(min-width: 500px){
+    body{
+        padding-left: 5%;
+        padding-right: 5%;
+      
+    }
+    h1{
+        font-size: 2.8rem;
+    }
+} 
+
+@media (min-width: 605px){
+    body{
+        padding-left: 7%;
+        padding-right: 7%;
+    
+    }
+    h1{
+        font-size: 3.1rem;
+    }
+}
+
+@media (min-width: 690px) {
+
+    body{
+        padding-left: 9%;
+        padding-right: 9%;
+    }
+
+    h1{
+        font-size: 3.4rem;
+    }
+}
+@media (min-width: 783px) {
+
+    body{
+        padding-left: 11%;
+        padding-right: 11%;
+    }
+
+    h1{
+        font-size: 3.4rem;
+    }
+}
+
+@media (min-width: 824px) {
+
+    body{
+        padding-left: 13%;
+        padding-right: 13%;
+    }
+
+    h1{
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 890px) {
+
+    body{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    h1{
+        font-size: 3.8rem;
+    }
+}
+
+
+@media (min-width: 1024px) {
+
+    body{
+        padding-left: 16%;
+        padding-right: 16%;
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+
+
+}
+
+@media (min-width: 1139px) {
+
+    body{
+        padding-left: 18%;
+        padding-right: 18%;
+    }
+
+    h1{
+        font-size: 4.3rem;
+    }
+
+    .author p, .time p, .publish p, .book p, .subheader p{
+        font-size: 25px;
+    }
+
+    #section1, #section2, #section3, #section4, #response{
+        
+        grid-template-columns: 400px 1fr;
+    }
+
+
+    .page, .page1, .page2, .page3, .page4, .page5, .page6, .page7, .page8, .quote1, .quote2, .quote5, .list3, .line, .sentence{
+        padding-left: 3.75rem;
+    }
+
+    .title, .title1, .title2, .title3, .title4{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+}
+
+
+@media (min-width: 1286px) {
+
+    body{
+        padding-left: 18%;
+        padding-right: 18%;
+    }
+
+    h1{
+        font-size: 4.5rem;
+    }
+
+    .author p, .time p, .publish p, .book p, .subheader p{
+        font-size: 25px;
+    }
+
+    #section1, #section2, #section3, #section4, #response{
+        
+        grid-template-columns: 400px 1fr;
+    }
+
+
+    .page, .page1, .page2, .page3, .page4, .page5, .page6, .page7, .page8, .quote1, .quote2, .quote5, .list3, .line, .sentence{
+        padding-left: 3.75rem;
+    }
+
+    .title, .title1, .title2, .title3, .title4{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+}
+
+@media (min-width: 1337px) {
+
+    body{
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    h1{
+        font-size: 4.5rem;
+    }
+
+    .author p, .time p, .publish p, .book p, .subheader p{
+        font-size: 25px;
+    }
+
+    #section1, #section2, #section3, #section4, #response{
+        
+        grid-template-columns: 400px 1fr;
+    }
+
+
+    .page, .page1, .page2, .page3, .page4, .page5, .page6, .page7, .page8, .quote1, .quote2, .quote5, .list3, .line, .sentence{
+        padding-left: 3.75rem;
+    }
+
+    .title, .title1, .title2, .title3, .title4{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+}
+@media (min-width: 1426px) {
+    body{
+        padding-left: 22%;
+        padding-right: 22%;
+    }
+
+    h1{
+        font-size: 4.8rem;
+    }
+
+    .author p, .time p, .publish p, .book p, .subheader p{
+        font-size: 25px;
+    }
+
+    #section1, #section2, #section3, #section4, #response{
+        
+        grid-template-columns: 400px 1fr;
+    }
+
+
+    .page, .page1, .page2, .page3, .page4, .page5, .page6, .page7, .page8, .quote1, .quote2, .quote5, .list3, .line, .sentence{
+        padding-left: 3.75rem;
+    }
+
+    .title, .title1, .title2, .title3, .title4{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+}
+
+@media (min-width: 1440px){
+    body{
+        padding-left: 20%;
+        padding-right: 20%;
         /* margin-left: 18rem;
         margin-right: 18rem; */
     }
@@ -227,7 +450,7 @@ footer p{
         font-size: 30px;
         color: black;
         text-align: center;
-        padding-left: 11.2rem;
+        /* padding-left: 11.2rem; */
         /* padding: 14px 16px; */
         text-decoration: none;
         /* background-color: #EED819; */
@@ -238,7 +461,7 @@ footer p{
     }
 
     h1{
-        font-size: 4.5rem;
+        font-size: 5rem;
     }
 
     h2{
@@ -295,298 +518,7 @@ footer p{
 
 }
 
-@media  (min-width: 1440px) and (max-width: 1547px){
-    body{
-        margin-left: 16rem;
-        margin-right: 16rem;
-    }
-
-   
-
-    h1{
-        font-size: 4.5rem;
-    }
-    .page, .page1, .page2, .page3, .page4, .page5, .page6, .page7, .page8, .quote1, .quote2, .quote5, .list3, .line, .sentence{
-        padding-left: 3.75rem;
-    }
-
-    h2{
-        font-size: 1.563rem;
-        text-align: left;
-        padding: 20px;
-    }
-
-    article p{
-        font-size: 1.25rem;
-        font-weight: 500;
-    }
 
 
-    .author p, .time p, .publish p, .book p, .subheader p{
-        font-size: 1.563rem;
-    }
 
-    #section1, #section2, #section3, #section4, #response{
-        
-        grid-template-columns: 400px 1fr;
-    }
-
-
-    .page, .page1, .page2, .page3, .page4, .page5, .page6, .page7, .page8, .quote1, .quote2, .quote5, .list3, .line, .sentence{
-        padding-left: 3.75rem;
-    }
-
-    .title, .title1, .title2, .title3, .title4{
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    
-    footer{
-        width: 30ch;
-        margin-top: 200px;
-    }
-    
-    footer p{
-
-        padding-left: 20px;
-        padding-bottom: 20px;
-        padding-top: 20px;
-        height: 5ch;
-        margin-left: 20px;
-        margin-right: 20px;
-        background-color: black;
-        color: white;
-        font-size: 20px;
-        width: 10ch;
-}
-
-}
-@media (min-width: 1415px) and (max-width: 1439px){
-    body{
-        margin-left: 16rem;
-        margin-right: 16rem;
-    }
-
-  
-
-    h1{
-        font-size: 4.4rem;
-    }
-
-    h2{
-        font-size: 1.563rem;
-        text-align: left;
-        padding: 20px;
-    }
-
-    article p{
-        font-size: 1.2rem;
-        font-weight: 500;
-    }
-
-
-    .author p, .time p, .publish p, .book p, .subheader p{
-        font-size: 1.563rem;
-    }
-
-    #section1, #section2, #section3, #section4, #response{
-        
-        grid-template-columns: 400px 1fr;
-    }
-
-
-    .page, .page1, .page2, .page3, .page4, .page5, .page6, .page7, .page8, .quote1, .quote2, .quote5, .list3, .line, .sentence{
-        padding-left: 3.75rem;
-    }
-
-    .title, .title1, .title2, .title3, .title4{
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    
-    footer{
-        width: 30ch;
-        margin-top: 200px;
-    }
-    
-    footer p{
-
-        padding-left: 20px;
-        padding-bottom: 20px;
-        padding-top: 20px;
-        height: 5ch;
-        margin-left: 20px;
-        margin-right: 20px;
-        background-color: black;
-        color: white;
-        font-size: 20px;
-        width: 10ch;
-}
-
-
-    
-
-}
-
-@media (min-width: 1391px) and (max-width: 1414px){
-    body{
-        margin-left: 15rem;
-        margin-right: 15rem;
-    }
-
-  
-
-    h1{
-        font-size: 4.4rem;
-    }
-
-    h2{
-        font-size: 1.563rem;
-        text-align: left;
-        padding: 20px;
-    }
-
-    article p{
-        font-size: 1.2rem;
-        font-weight: 500;
-    }
-
-
-    .author p, .time p, .publish p, .book p, .subheader p{
-        font-size: 1.563rem;
-    }
-
-    #section1, #section2, #section3, #section4, #response{
-        
-        grid-template-columns: 400px 1fr;
-    }
-
-
-    .page, .page1, .page2, .page3, .page4, .page5, .page6, .page7, .page8, .quote1, .quote2, .quote5, .list3, .line, .sentence{
-        padding-left: 3.75rem;
-    }
-
-    .title, .title1, .title2, .title3, .title4{
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    
-    footer{
-        width: 30ch;
-        margin-top: 200px;
-    }
-    
-    footer p{
-
-        padding-left: 20px;
-        padding-bottom: 20px;
-        padding-top: 20px;
-        height: 5ch;
-        margin-left: 20px;
-        margin-right: 20px;
-        background-color: black;
-        color: white;
-        font-size: 20px;
-        width: 10ch;
-}
-}
-
-@media (min-width: 1300px) and (max-width: 1390px){
-    body{
-        margin-left: 15rem;
-        margin-right: 15rem;
-    }
-
-  
-
-    h1{
-        font-size: 4rem;
-    }
-
-    h2{
-        font-size: 1.563rem;
-        text-align: left;
-        padding: 20px;
-    }
-
-    article p{
-        font-size: 1.2rem;
-        font-weight: 500;
-    }
-
-
-    .author p, .time p, .publish p, .book p, .subheader p{
-        font-size: 1.563rem;
-    }
-
-    #section1, #section2, #section3, #section4, #response{
-        
-        grid-template-columns: 400px 1fr;
-    }
-
-
-    .page, .page1, .page2, .page3, .page4, .page5, .page6, .page7, .page8, .quote1, .quote2, .quote5, .list3, .line, .sentence{
-        padding-left: 3.75rem;
-    }
-
-    .title, .title1, .title2, .title3, .title4{
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    
-    footer{
-        width: 30ch;
-        margin-top: 200px;
-    }
-    
-    footer p{
-
-        padding-left: 20px;
-        padding-bottom: 20px;
-        padding-top: 20px;
-        height: 5ch;
-        margin-left: 20px;
-        margin-right: 20px;
-        background-color: black;
-        color: white;
-        font-size: 20px;
-        width: 10ch;
-}
-}
-@media(min-width: 477px) and (max-width: 501px){
-    h1{
-        font-size: 3.2rem;
-    }
-}
-
-@media(min-width: 452px) and (max-width: 476px){
-    h1{
-        font-size: 3rem;
-    }
-}
-
-@media(min-width: 438px) and (max-width: 451px){
-    h1{
-        font-size: 2.8rem;
-    }
-}
-@media(min-width: 417px) and (max-width: 438px){
-    h1{
-        font-size: 2.7rem;
-    }
-} 
-@media (min-width: 401px) and (max-width: 416px){
-    h1{
-        font-size: 2.6rem;
-    }
-}
-@media(min-width: 375px) and (max-width: 400px){
-    h1{
-        font-size: 2.4rem;
-    }
-} 
 
