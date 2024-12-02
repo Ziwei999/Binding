@@ -9,9 +9,7 @@ header{
     /* align-items: center;	 */
 }
 
-h1, .subheader, .author, .time{
-    border: 3px solid black;
-}
+
 
 h1{
     background-color: #377af5;
@@ -30,6 +28,8 @@ h2{
     grid-column: 1;
     grid-row: 1;
     
+    
+    
 }
 
 .subheader{
@@ -41,6 +41,9 @@ h2{
     padding-left: 10px;
     padding-right: 10px;
     background-color: #399953;
+    border: 3px solid black;
+    /* border-left: 3px solid black;
+    border-right: 3px solid black; */
     
 }
 
@@ -57,6 +60,9 @@ h2{
     padding-left: 10px;
     padding-right: 10px;
     background-color: #d53e33;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    
 }
 
 .author p{
@@ -72,6 +78,10 @@ h2{
     padding-left: 10px;
     padding-right: 10px;
     background-color: #fbb300;
+    /* border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black; */
+    border: 3px solid black;
 }
 
 .time p{
@@ -227,6 +237,10 @@ h2{
         padding-right: 1.25rem;
     }
 
+    .author p, .time p, .list3 li{
+        font-size: 25px;
+    }
+
     .author{
         grid-column: 1;
         grid-row: 3;
@@ -234,7 +248,7 @@ h2{
     }
 
     .author p{
-        font-size: 25px;
+        /* font-size: 25px; */
         padding-left: 70px;
         padding-right: 70px;
     }
@@ -245,7 +259,7 @@ h2{
     }
 
     .time p{
-        font-size: 25px;
+        /* font-size: 25px; */
         padding-left: 50px;
         padding-right: 50px;
 
@@ -1132,6 +1146,28 @@ h2{
 
     }
 
+    @media(min-width: 477px) and (max-width: 501px){
+        header{
+            
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: 390px 90px repeat(2, 60px);
+            padding-bottom: 20px;
+            
+            
+        }
+    }
+
+    @media(min-width: 452px) and (max-width: 476px){
+        header{
+            
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: 360px 90px repeat(2, 60px);
+            padding-bottom: 20px;
+            
+            
+        }
+    }
+
 
     @media(min-width: 438px) and (max-width: 451px){
         header{
@@ -1174,5 +1210,6 @@ h2{
         .subheader p{
             font-size: 1.2rem;
         }
+      
     }
 
