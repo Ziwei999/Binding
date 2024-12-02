@@ -1,6 +1,11 @@
 body{
+    background-color: #EDDCBE;
+    
     
 
+}
+header{
+    display: grid;
 }
 
 .navbar{
@@ -8,23 +13,26 @@ body{
     z-index: 1;
     position: sticky;
     top: 0;
-    padding: 0;
+    padding-bottom: 20px;
+    margin-right: 5px;
+    /* padding: 0; */
     
 }
 .navbar a {
-    float: right;
+    float: left;
     font-size: 16px;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 18px;
+    /* padding-left: 14px; */
     text-decoration: none;
-    background-color: #EED819;
+    background-color: #fbb300;
   }
 
   
 
 .navbar .dropdown1 a{
-    background-color: #2B28D4;
+    background-color: #377af5;
     color: white;
 }
 
@@ -34,7 +42,7 @@ body{
   }
 
 .navbar .dropdown3 a{
-    background-color: #8A230D;
+    background-color: #d53e33;
     color: white;
 }
   
@@ -44,46 +52,151 @@ body{
 }
   
 .navbar a:hover, .dropdown:hover {
-    background-color: grey;
+    background-color: black;
 }
   
-.dropdown1 .dropdown-content {
-    display: none;
-    position: absolute;
-    margin-top: 16px;
-}
-
-.dropdown2 .dropdown-content{
-    display: none;
-    position: absolute;
-    margin-top: 16px;
-    margin-left: 16px;
-}
-
-.dropdown3 .dropdown-content{
-    display: none;
-    position: absolute;
-    margin-top: 16px;
-    margin-left: 180px;
-}
-  
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+.dropdown:hover{
     display: block;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+@keyframes rotate {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+
+header, .list, .list1, .list2,.grid-line, blockquote{
+    position: relative;
+	z-index: -1;
+	border-radius: 10px;
+	overflow: hidden;
+	padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: flex;
+	
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: -2;
+		left: -50%;
+		top: -50%;
+		width: 200%;
+		height: 200%;
+		background-color: #399953;
+		background-repeat: no-repeat;
+		background-size: 50% 50%, 50% 50%;
+		background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+		background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+		animation: rotate 4s linear infinite;
+	}
+	
+	&::after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		left: 6px;
+		top: 6px;
+		width: calc(100% - 12px);
+		height: calc(100% - 12px);
+		background: white;
+		border-radius: 5px;
+        /* background-size: 40px 40px;
+        background-image:
+        linear-gradient(to right, grey 1px, transparent 1px),
+        linear-gradient(to bottom, grey 1px, transparent 1px); */
+	}
+}
+
+.list, .list1, .list2, .grid-line,blockquote{
+    &::after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		left: 6px;
+		top: 6px;
+		width: calc(100% - 12px);
+		height: calc(100% - 12px);
+		background: white;
+		border-radius: 5px;
+        background-image: none;
+	}
+}
+
+h1{
+    /* font-size: 38px; */
+    font-size: 33px;
     text-align: left;
-    margin-top: 30px;
+    /* font-family: "Baskerville", serif; */
+    font-family: Didot;
+    /* font-family: "DM Serif Display", serif; */
+    color: white;
+    
 }
-  
-.dropdown-content a:hover {
-    background-color: #ddd;
+
+h2{
+    font-size: 25px;
+    font-family: Didot;
+    /* font-family: "Baskerville", serif; */
+    color: white;
+    padding-left: 20px;
 }
-  
-.dropdown:hover .dropdown-content {
-    display: block;
+
+article{
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
+
+article p{
+    font-size: 20px;
+    font-family: Minion;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 18px;
+    
+}
+
+aside{
+    position: sticky;
+    top: 1.9rem;
+    padding: 0;
+   
+}
+
+li{
+    font-size: 16px;
+    font-family: "Spectral", serif;
+    padding: 10px;
+}
+
+blockquote{
+    font-family: Minion;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.5;
+    box-shadow: 10px 10px 5px lightblue;
+    padding: 20px;
+}
+
+#section1, #section2, 
+#section3, #section4, #response{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.title, .title1, .title2, .title3, .title4{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+
+
+
 
 footer{
     width: 45ch;
@@ -99,7 +212,68 @@ footer p{
     font-size: 10px;
 }
 
-@media (min-width: 1281px){
+
+
+@media (min-width: 1548px){
+    body{
+        padding-left: 18rem;
+        padding-right: 18rem;
+        /* margin-left: 18rem;
+        margin-right: 18rem; */
+    }
+   
+    
+    .navbar a {
+        float: left;
+        font-size: 30px;
+        color: black;
+        text-align: center;
+        padding-left: 11.2rem;
+        /* padding: 14px 16px; */
+        text-decoration: none;
+        /* background-color: #EED819; */
+    }
+
+    header{
+        padding-top: 3.1rem;
+    }
+
+    h1{
+        font-size: 4.5rem;
+    }
+
+    h2{
+        font-size: 1.563rem;
+        text-align: left;
+        padding: 20px;
+    }
+
+    article p{
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+
+    .author p, .time p, .publish p, .book p, .subheader p{
+        font-size: 25px;
+    }
+
+    #section1, #section2, #section3, #section4, #response{
+        
+        grid-template-columns: 400px 1fr;
+    }
+
+
+    .page, .page1, .page2, .page3, .page4, .page5, .page6, .page7, .page8, .quote1, .quote2, .quote5, .list3, .line, .sentence{
+        padding-left: 3.75rem;
+    }
+
+    .title, .title1, .title2, .title3, .title4{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    
     footer{
         width: 30ch;
         margin-top: 200px;
@@ -121,3 +295,387 @@ footer p{
 
 
 }
+
+@media  (min-width: 1440px) and (max-width: 1547px){
+    body{
+        margin-left: 16rem;
+        margin-right: 16rem;
+    }
+
+   
+
+    h1{
+        font-size: 4.5rem;
+    }
+    .page, .page1, .page2, .page3, .page4, .page5, .page6, .page7, .page8, .quote1, .quote2, .quote5, .list3, .line, .sentence{
+        padding-left: 3.75rem;
+    }
+
+    h2{
+        font-size: 1.563rem;
+        text-align: left;
+        padding: 20px;
+    }
+
+    article p{
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+
+    .author p, .time p, .publish p, .book p, .subheader p{
+        font-size: 1.563rem;
+    }
+
+    #section1, #section2, #section3, #section4, #response{
+        
+        grid-template-columns: 400px 1fr;
+    }
+
+
+    .page, .page1, .page2, .page3, .page4, .page5, .page6, .page7, .page8, .quote1, .quote2, .quote5, .list3, .line, .sentence{
+        padding-left: 3.75rem;
+    }
+
+    .title, .title1, .title2, .title3, .title4{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    
+    footer{
+        width: 30ch;
+        margin-top: 200px;
+    }
+    
+    footer p{
+
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        height: 5ch;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        width: 10ch;
+}
+
+}
+@media (min-width: 1415px) and (max-width: 1439px){
+    body{
+        margin-left: 16rem;
+        margin-right: 16rem;
+    }
+
+  
+
+    h1{
+        font-size: 4.4rem;
+    }
+
+    h2{
+        font-size: 1.563rem;
+        text-align: left;
+        padding: 20px;
+    }
+
+    article p{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+
+    .author p, .time p, .publish p, .book p, .subheader p{
+        font-size: 1.563rem;
+    }
+
+    #section1, #section2, #section3, #section4, #response{
+        
+        grid-template-columns: 400px 1fr;
+    }
+
+
+    .page, .page1, .page2, .page3, .page4, .page5, .page6, .page7, .page8, .quote1, .quote2, .quote5, .list3, .line, .sentence{
+        padding-left: 3.75rem;
+    }
+
+    .title, .title1, .title2, .title3, .title4{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    
+    footer{
+        width: 30ch;
+        margin-top: 200px;
+    }
+    
+    footer p{
+
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        height: 5ch;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        width: 10ch;
+}
+
+
+    
+
+}
+
+@media (min-width: 1391px) and (max-width: 1414px){
+    body{
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
+
+  
+
+    h1{
+        font-size: 4.4rem;
+    }
+
+    h2{
+        font-size: 1.563rem;
+        text-align: left;
+        padding: 20px;
+    }
+
+    article p{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+
+    .author p, .time p, .publish p, .book p, .subheader p{
+        font-size: 1.563rem;
+    }
+
+    #section1, #section2, #section3, #section4, #response{
+        
+        grid-template-columns: 400px 1fr;
+    }
+
+
+    .page, .page1, .page2, .page3, .page4, .page5, .page6, .page7, .page8, .quote1, .quote2, .quote5, .list3, .line, .sentence{
+        padding-left: 3.75rem;
+    }
+
+    .title, .title1, .title2, .title3, .title4{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    
+    footer{
+        width: 30ch;
+        margin-top: 200px;
+    }
+    
+    footer p{
+
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        height: 5ch;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        width: 10ch;
+}
+}
+
+@media (min-width: 1300px) and (max-width: 1390px){
+    body{
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
+
+  
+
+    h1{
+        font-size: 4rem;
+    }
+
+    h2{
+        font-size: 1.563rem;
+        text-align: left;
+        padding: 20px;
+    }
+
+    article p{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+
+    .author p, .time p, .publish p, .book p, .subheader p{
+        font-size: 1.563rem;
+    }
+
+    #section1, #section2, #section3, #section4, #response{
+        
+        grid-template-columns: 400px 1fr;
+    }
+
+
+    .page, .page1, .page2, .page3, .page4, .page5, .page6, .page7, .page8, .quote1, .quote2, .quote5, .list3, .line, .sentence{
+        padding-left: 3.75rem;
+    }
+
+    .title, .title1, .title2, .title3, .title4{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    
+    footer{
+        width: 30ch;
+        margin-top: 200px;
+    }
+    
+    footer p{
+
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        height: 5ch;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        width: 10ch;
+}
+}
+
+@media(min-width: 438px) and (max-width: 451px){
+    h1{
+        font-size: 2.8rem;
+    }
+}
+@media(min-width: 417px) and (max-width: 438px){
+    h1{
+        font-size: 2.7rem;
+    }
+} 
+@media (min-width: 401px) and (max-width: 416px){
+    h1{
+        font-size: 2.6rem;
+    }
+}
+@media(min-width: 375px) and (max-width: 400px){
+    h1{
+        font-size: 2.4rem;
+    }
+} 
+
+/* @media(min-width: 424px) and (max-width: 442px){
+    h1{
+        font-size: 2.5rem;
+    }
+}
+@media(min-width: 415px) and (max-width: 423px){
+    h1{
+        font-size: 2.5rem;
+    }
+}
+@media (min-width: 401px) and (max-width: 414px){
+        h1{
+            font-size: 2.3rem;
+        }
+}
+
+@media (min-width: 376px) and (max-width: 400px){
+        h1{
+            font-size: 2.3rem;
+        }
+
+        
+} */
+/* 
+@media (min-width: 1440px) and (max-width: 1665px){
+    body{
+        padding-left: 18rem;
+        padding-right: 18rem;
+       
+    }
+   
+    
+    .navbar a {
+        float: left;
+        font-size: 30px;
+        color: black;
+        text-align: center;
+        padding-left: 145px;
+        
+        text-decoration: none;
+       
+    }
+
+    h1{
+        font-size: 80px;
+    }
+
+    h2{
+        font-size: 25px;
+        text-align: left;
+        padding: 20px;
+    }
+
+    article p{
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+
+    .author p, .time p, .publish p, .book p{
+        font-size: 25px;
+    }
+
+    #section1, #section2, #section3, #section4, #response{
+        
+        grid-template-columns: 400px 1fr;
+    }
+
+
+    .page, .page1, .page2, .page3, .page4, .page5, .page6, .page7, .page8, .quote1, .quote2, .quote5, .list3, .line, .sentence{
+        padding-left: 60px;
+    }
+
+    .title, .title1, .title2, .title3, .title4{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    
+    footer{
+        width: 30ch;
+        margin-top: 200px;
+    }
+    
+    footer p{
+
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        height: 5ch;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        width: 10ch;
+}
+
+} */
