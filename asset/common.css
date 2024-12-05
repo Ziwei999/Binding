@@ -32,8 +32,6 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     
-    /* padding: 0; */
-    
 }
 .navbar a {
     float: left;
@@ -41,7 +39,7 @@ header{
     color: var(--text-color);
     text-align: center;
     padding: 14px 18px;
-    /* padding-left: 14px; */
+   
     text-decoration: none;
     background-color:var(--yellow-color);
     width: -webkit-fill-available;
@@ -156,7 +154,6 @@ h1{
 h2{
     font-size: 25px;
     font-family: Didot;
-    /* font-family: "Baskerville", serif; */
     color: var(--header-color);
     padding-left: 20px;
 }
@@ -183,7 +180,7 @@ aside{
 }
 
 li{
-    
+    font-family: Minion;
     padding: 10px;
     
   
@@ -212,9 +209,6 @@ blockquote{
     grid-column: 1;
     grid-row: 1;
 }
-
-
-
 
 
 footer{
@@ -358,8 +352,12 @@ footer p{
         grid-template-columns: 400px 1fr;
     }
 
+    .page1{
+        grid-column: 2;
+        grid-row: 1;
+    }
 
-    .page, .page1, .page2, .page3, .page4, .page5, .page6, .page7, .page8, .quote1, .quote2, .quote5, .list3, .line, .sentence{
+    .page1, .page2, .page3, .page4, .page5, .page6, .page7, .page8, .quote1, .quote2, .quote5, .list3, .line, .sentence{
         padding-left: 3.75rem;
     }
 
@@ -410,6 +408,11 @@ footer p{
     h1{
         font-size: 4.8rem;
     }
+    .page1{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
 
     .author p, .time p, .publish p, .book p, .subheader p{
         font-size: 25px;
@@ -480,8 +483,13 @@ footer p{
         margin-top: 100px;
     }
 
+    .page1{
+        grid-column: 2;
+        grid-row: 1;
+    }
 
-    .page, .page1, .page2, .page3, .page4, .page5, .page6, .page7, .page8, .quote1, .quote2, .quote5, .list3, .line, .sentence{
+
+    .page1, .page2, .page3, .page4, .page5, .page6, .page7, .page8, .quote1, .quote2, .quote5, .list3, .line, .sentence{
         padding-left: 3.75rem;
     }
 
@@ -493,7 +501,7 @@ footer p{
 
     
     footer{
-        /* width: 30ch; */
+
         margin-top: 200px;
     }
     
@@ -508,8 +516,8 @@ footer p{
         background-color:var(--text-color);
         color:var(--header-color);
         font-size: 20px;
-        /* width: 10ch; */
-}
+        
+    }
 
 
 }

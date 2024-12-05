@@ -48,7 +48,6 @@ li{
 
 .author{
     background-color: var(--blue-color);
-    /* border: 5px solid black; */
     font-family:  "Raleway", sans-serif;
     grid-column: 1/span 2;
     grid-row: 3;
@@ -64,7 +63,6 @@ li{
 }
 
 .a{
-    /* font-size: 20px; */
     padding-top: 20px;
     padding-left: 15px;
 }
@@ -76,7 +74,6 @@ li{
     padding-left: 10px;
     grid-column: 1;
     grid-row: 1/span 2;
-    /* padding-left: 20px; */
     
 }
 
@@ -95,9 +92,7 @@ li{
     border-right: var(--border-style);
     border-bottom: var(--border-style);
     grid-column: 2;
-    grid-row: 2;
-  
-    
+    grid-row: 2; 
 }
 
 .g{
@@ -105,17 +100,13 @@ li{
 }
 
 #section1{
-    margin-bottom: 0;
-    
+    margin-bottom: 0;    
 }
-
-
 
 .page1{
     grid-column: 1;
     grid-row: 2;
 }
-
 
 .sentence{
     grid-column: 1;
@@ -410,7 +401,7 @@ main{
     }
     h1{
         font-size: 3rem;
-        padding: 30px;
+        
     }
  
 
@@ -507,13 +498,13 @@ main{
 
     .page1{
         grid-column: 2;
-        grid-row: 2;
+        grid-row: 1;
     }
 
 
     .sentence{
         grid-column: 2;
-        grid-row: 3;
+        grid-row: 2;
         
     }
 

@@ -223,7 +223,7 @@ h2{
     }
 
     .time p{
-        /* font-size: 25px; */
+        
         padding-left: 50px;
         padding-right: 50px;
 
@@ -241,8 +241,7 @@ h2{
     }
     .quote1{
         grid-column: 2;
-        grid-row: 3;
-      
+        grid-row: 3;   
     }
 
     .page3{
@@ -265,9 +264,7 @@ h2{
     }
 
     #section2{
-        grid-template-rows: 400px 100px 1fr;
-        
-       
+        grid-template-rows: 400px 100px 1fr;  
     }
      
     .quote3{
@@ -282,17 +279,12 @@ h2{
 
     #section3{
       
-        grid-template-rows: 300px 100px 350px 150px 200px 1fr;
-       
+        grid-template-rows: 300px 100px 350px 150px 200px 1fr; 
     }
-
-    
 
     .quote4{
         grid-column: 1;
         grid-row: 2;
-
-
     }
 
     .page6{
@@ -304,22 +296,16 @@ h2{
     .page7{
         grid-column: 2;
         grid-row: 4;
-
-        
-
     }
 
     .quote5{
         grid-column: 2;
         grid-row: 5;
-
     }
 
     .page8{
         grid-column: 2;
         grid-row: 6;
-   
-
     }
 
     #response{
@@ -327,19 +313,11 @@ h2{
         grid-template-rows: 150px 1fr;
     }
 
-
-
     .list3{
         display: grid;
         grid-column: 2;
         grid-row: 1/span 2;
         padding-top: 60px;
-
-    }
-
-
-    .list3 li{
-        padding-top: 30px;
     }
 }
 
@@ -545,8 +523,8 @@ h2{
         padding-right: 1.25rem;
     }
 
-    .author p, .time p, .list3 li, .subheader p{
-        font-size: 1.2rem;
+    .author p, .time p, .subheader p{
+        font-size: 1.5rem;
     }
 
     .author{
@@ -577,5 +555,7 @@ h2{
 
     }
 
-    
+    .list3 li{
+        font-size: 1.25rem;
+    }
 }
