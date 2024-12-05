@@ -1,5 +1,20 @@
+:root{
+    --primary-color:#EDDCBE;
+    --text-color:black;
+    --yellow-color:#fbb300;
+    --red-color:#d53e33;
+    --blue-color:#377af5;
+    --green-color:#0D8A21;
+    --header-color:white;
+    --border-display: none;
+    --border-style: 3px solid black;
+    --border-desk: 5px solid black;
+}
+
 body{
-    background-color: #EDDCBE; 
+    background-color:var(--primary-color); 
+    padding-left: .5rem;
+    padding-right: .5rem;
 
 }
 header{
@@ -23,32 +38,32 @@ header{
 .navbar a {
     float: left;
     font-size: 16px;
-    color: black;
+    color: var(--text-color);
     text-align: center;
     padding: 14px 18px;
     /* padding-left: 14px; */
     text-decoration: none;
-    background-color: #fbb300;
+    background-color:var(--yellow-color);
     width: -webkit-fill-available;
   }
 
   
 
 .navbar .dropdown1 a{
-    background-color: #377af5;
-    color: white;
+    background-color: var(--blue-color);
+    color:var(--header-color);
     width: -webkit-fill-available;
 }
 
 .navbar .dropdown2 a{
-    background-color: #0D8A21;
-    color: white;
+    background-color: var(--green-color);
+    color: var(--header-color);
     width: -webkit-fill-available;
   }
 
 .navbar .dropdown3 a{
-    background-color: #d53e33;
-    color: white;
+    background-color: var(--red-color);
+    color: var(--header-color);
     width: -webkit-fill-available;
 }
   
@@ -58,7 +73,7 @@ header{
 }
   
 .navbar a:hover, .dropdown:hover {
-    background-color: black;
+    background-color: var(--text-color);
 }
   
 .dropdown:hover{
@@ -82,7 +97,9 @@ header, .list, .list1, .list2,.grid-line, blockquote{
 	overflow: hidden;
 	padding-left: 1.5rem;
     padding-right: 1.5rem;
-    display: flex;
+    display: grid;
+    margin-top: 40px;
+    margin-bottom: 40px;
 	
 	&::before {
 		content: '';
@@ -92,7 +109,7 @@ header, .list, .list1, .list2,.grid-line, blockquote{
 		top: -50%;
 		width: 200%;
 		height: 200%;
-		background-color: #399953;
+		background-color:var(--green-color);
 		background-repeat: no-repeat;
 		background-size: 50% 50%, 50% 50%;
 		background-position: 0 0, 100% 0, 100% 100%, 0 100%;
@@ -108,12 +125,8 @@ header, .list, .list1, .list2,.grid-line, blockquote{
 		top: 6px;
 		width: calc(100% - 12px);
 		height: calc(100% - 12px);
-		background: white;
+		background: var(--header-color);
 		border-radius: 5px;
-        /* background-size: 40px 40px;
-        background-image:
-        linear-gradient(to right, grey 1px, transparent 1px),
-        linear-gradient(to bottom, grey 1px, transparent 1px); */
 	}
 }
 
@@ -126,20 +139,17 @@ header, .list, .list1, .list2,.grid-line, blockquote{
 		top: 6px;
 		width: calc(100% - 12px);
 		height: calc(100% - 12px);
-		background: white;
+		background: var(--header-color);
 		border-radius: 5px;
         background-image: none;
 	}
 }
 
 h1{
-    /* font-size: 38px; */
     font-size: 30px;
     text-align: left;
-    /* font-family: "Baskerville", serif; */
     font-family: Didot;
-    /* font-family: "DM Serif Display", serif; */
-    color: white;
+    color: var(--header-color);
     
 }
 
@@ -147,7 +157,7 @@ h2{
     font-size: 25px;
     font-family: Didot;
     /* font-family: "Baskerville", serif; */
-    color: white;
+    color: var(--header-color);
     padding-left: 20px;
 }
 
@@ -173,7 +183,9 @@ aside{
 }
 
 li{
+    
     padding: 10px;
+    
   
 }
 
@@ -183,14 +195,17 @@ blockquote{
     font-weight: 700;
     font-style: italic;
     line-height: 1.5;
-    box-shadow: 10px 10px 5px lightblue;
-    padding: 20px;
+    padding: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 #section1, #section2, 
 #section3, #section4, #response{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    margin-top: 50px;
 }
 
 .title, .title1, .title2, .title3, .title4{
@@ -203,17 +218,17 @@ blockquote{
 
 
 footer{
-    width: 45ch;
-    background-color: black;
+    
+    background-color: var(--text-color);
 }
 
 footer p{
     padding-left: 20px;
     padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
     height: 5ch;
-    color: white;
-    font-size: 10px;
+    color: var(--header-color);
+    font-size: 13px;
 }
 
 
@@ -320,25 +335,6 @@ footer p{
         font-size: 4.3rem;
     }
 
-    .author p, .time p, .publish p, .book p, .subheader p{
-        font-size: 25px;
-    }
-
-    #section1, #section2, #section3, #section4, #response{
-        
-        grid-template-columns: 400px 1fr;
-    }
-
-
-    .page, .page1, .page2, .page3, .page4, .page5, .page6, .page7, .page8, .quote1, .quote2, .quote5, .list3, .line, .sentence{
-        padding-left: 3.75rem;
-    }
-
-    .title, .title1, .title2, .title3, .title4{
-        grid-column: 1;
-        grid-row: 1;
-    }
-
 }
 
 
@@ -440,28 +436,21 @@ footer p{
     body{
         padding-left: 20%;
         padding-right: 20%;
-        /* margin-left: 18rem;
-        margin-right: 18rem; */
     }
    
     
     .navbar a {
         float: left;
         font-size: 30px;
-        color: black;
+        color: var(--text-color);
         text-align: center;
-        /* padding-left: 11.2rem; */
-        /* padding: 14px 16px; */
         text-decoration: none;
-        /* background-color: #EED819; */
-    }
-
-    header{
-        padding-top: 3.1rem;
+       
     }
 
     h1{
         font-size: 5rem;
+        padding: 30px;
     }
 
     h2{
@@ -475,6 +464,11 @@ footer p{
         font-weight: 500;
     }
 
+    aside{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
 
     .author p, .time p, .publish p, .book p, .subheader p{
         font-size: 25px;
@@ -483,6 +477,7 @@ footer p{
     #section1, #section2, #section3, #section4, #response{
         
         grid-template-columns: 400px 1fr;
+        margin-top: 100px;
     }
 
 
@@ -495,9 +490,10 @@ footer p{
         grid-row: 1;
     }
 
+
     
     footer{
-        width: 30ch;
+        /* width: 30ch; */
         margin-top: 200px;
     }
     
@@ -505,14 +501,14 @@ footer p{
 
         padding-left: 20px;
         padding-bottom: 20px;
-        padding-top: 20px;
-        height: 5ch;
+        padding-top: 10px;
+        /* height: 5ch; */
         margin-left: 20px;
         margin-right: 20px;
-        background-color: black;
-        color: white;
+        background-color:var(--text-color);
+        color:var(--header-color);
         font-size: 20px;
-        width: 10ch;
+        /* width: 10ch; */
 }
 
 

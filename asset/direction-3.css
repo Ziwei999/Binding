@@ -1,3 +1,14 @@
+:root{
+    --primary-color:#EDDCBE;
+    --text-color:black;
+    --yellow-color:#fbb300;
+    --red-color:#d53e33;
+    --blue-color:#377af5;
+    --green-color:#0D8A21;
+    --header-color:white;
+    --header-size:;
+}
+
 header{
     display: grid;
     grid-template-columns: 200px 101px;
@@ -11,11 +22,11 @@ header{
 h1, .publish, .book{
   
     padding-left: 13px;
-    color: white;
+    color: var(--header-color);
 }
 
 h2{
-    background-color: #d53e33;
+    background-color: var(--red-color);
 }
 
 
@@ -28,50 +39,41 @@ header p{
 .header1{
     grid-column: 1/span 2;
     grid-row: 1;
-    border: 3px solid black;
-    background-color: #d53e33;
+    border: 3px solid var(--text-color);
+    background-color: var(--red-color);
 }
 
 .header2{
     grid-column: 1;
     grid-row: 2/span 2;
-    border: 3px solid black;
+    border: 3px solid var(--text-color);
     border-top: none;
-    background-color: #fbb300;
+    background-color: var(--yellow-color);
 }
 
 .publish{
     grid-column: 2;
     grid-row: 2;
-    border-right: 3px solid black;
-    border-bottom: 3px solid black;
-    background-color:#377af5;
+    border-right: 3px solid var(--text-color);
+    border-bottom: 3px solid var(--text-color);
+    background-color:var(--blue-color);
     
 }
 
 .book{
     grid-column: 2;
     grid-row: 3;
-    border-right: 3px solid black;
-    border-bottom: 3px solid black;
-    background-color: #399953;
+    border-right: 3px solid var(--text-color);
+    border-bottom: 3px solid var(--text-color);
+    background-color: var(--green-color);
 }
 
 
-
-#section1{
-    grid-template-rows: 50px 1fr;
-}
 
 .page1{
     grid-column: 1;
     grid-row: 2;
 }
-
-#section2{
-    grid-template-rows: 150px 200px 1fr;
-}
-
 
 
 .quote{
@@ -82,35 +84,31 @@ header p{
     grid-row: 3;
 }
 
-#section3{
-
-    grid-template-rows: 120px 1fr;
-}
-
 
 .page3{
     grid-row: 2;
 }
 
-#section4{
-    grid-template-rows: 150px 1fr;
-
-}
 
 .page4{
     grid-row: 2;
 }
 
+.footnote li{
+    font-size: 13px;
+    padding: 5px;
+}
+
 @media(min-width: 425px){
     header{
         grid-template-columns: 200px 140px;
-        grid-template-rows: 100px 100px 100px;
+        grid-template-rows: repeat(3, 100px);
     }
 }
 @media(min-width: 500px){
     header{
         grid-template-columns: 250px 150px;
-        grid-template-rows: 100px 100px 100px;
+        grid-template-rows: repeat(3, 100px);
     }
 
     h1{
@@ -122,7 +120,7 @@ header p{
 @media (min-width: 690px) {
     header{
         grid-template-columns: 300px 150px;
-        grid-template-rows: 150px 100px 100px;
+        grid-template-rows: 150px repeat(2, 100px);
     }
 }
 
@@ -130,86 +128,29 @@ header p{
     header {
         display: grid;
         grid-template-columns: 300px 250px;
-        grid-template-rows: 200px 100px 100px;
+        grid-template-rows: 200px repeat(2, 100px);
         justify-content: center;
     }
    
 }
 
-/* @media (min-width: 1024px) {
-    header{
-        display: grid;
-        
-        grid-template-columns: 350px 300px;
-        grid-template-rows: 200px 150px 100px;
-    }
-} */
 
 @media (min-width: 1139px) {
     header{
-        display: grid;
-        
+        display: grid; 
         grid-template-columns: 330px 300px;
         grid-template-rows: 200px 150px 100px;
-    }
-
-    #section1{
-        grid-template-rows: 100px 1fr;
-    }
-
-    .title{
-        grid-column: 1;
-        grid-row: 1;
-    }
-    .page1{
-        grid-column: 2;
-        grid-row: 2;
-    }
-
-    #section2{
-        
-        grid-template-rows: 300px 200px 1fr;
-    }
-
-    .quote{
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    .page2{
-        grid-column: 2;
-        grid-row: 1/span 3;
-    }
-
-    #section3{
-        grid-template-rows: 300px 1fr 1fr;
-    }
-
-    .page3{
-        grid-column: 2;
-        grid-row: 1/ span3;
-    }
-
-    #section4{
-        grid-template-rows: 300px 1fr;
-    }
-
-    .page4{
-        grid-column: 2;
-        grid-row: 1;
     }
 
 
 
 }
 
-
-@media (min-width: 1440px){
- 
+@media (min-width: 1286px) {
     header{
         display: grid;
-        grid-template-columns: 500px 300px;
-        grid-template-rows: 250px 150px 150px;
+        grid-template-columns: 400px 300px;
+        grid-template-rows: 250px repeat(2, 150px);
           
     }
 
@@ -224,12 +165,6 @@ header p{
         font-size: 20px;
     }
 
-   
-
-    #section1{
-        grid-template-rows: 100px 1fr;
-    }
-
     .title{
         grid-column: 1;
         grid-row: 1;
@@ -237,11 +172,6 @@ header p{
     .page1{
         grid-column: 2;
         grid-row: 2;
-    }
-
-    #section2{
-        
-        grid-template-rows: 300px 200px 1fr;
     }
 
     .quote{
@@ -254,17 +184,48 @@ header p{
         grid-row: 1/span 3;
     }
 
-    #section3{
-        grid-template-rows: 300px 1fr 1fr;
-    }
 
     .page3{
         grid-column: 2;
         grid-row: 1/ span3;
     }
 
-    #section4{
-        grid-template-rows: 300px 1fr;
+    .page4{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+}
+
+
+@media (min-width: 1440px){
+ 
+    header{
+       
+        grid-template-columns: 500px 300px;
+        grid-template-rows: 250px repeat(2, 150px);
+          
+    }
+
+
+    header p{
+        font-size: 20px;
+    }
+
+    .quote{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .page2{
+        grid-column: 2;
+        grid-row: 1/span 3;
+    }
+
+
+    .page3{
+        grid-column: 2;
+        grid-row: 1/ span3;
     }
 
     .page4{
