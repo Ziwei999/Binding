@@ -214,32 +214,25 @@ li{
 }
 
 .sentence1{
-    /* display: grid; */
     grid-column: 1;
     grid-row: 6;
 }
 
 .list{
-    /* display: grid; */
     grid-column: 1;
     grid-row: 7;
-    box-shadow: 10px 10px 5px lightblue;
     padding: 20px;
    
 }
 
 .page5{
-    /* display: grid; */
     grid-column: 1;
     grid-row: 8;
 }
 
 .list1{
-    /* display: grid; */
     grid-column: 1;
     grid-row: 9;
-    /* background-color:#FFD23F; */
-    box-shadow: 10px 10px 5px lightblue;
     padding: 20px;
     
 }
@@ -296,7 +289,6 @@ main{
 }
 
 .list2{
-    /* display: grid; */
     grid-column: 1;
     grid-row: 3;
     padding: 20px;
@@ -469,8 +461,6 @@ main{
    
 
     .author{
-       
-        
         padding-left: 30px;
 
     }
@@ -480,9 +470,7 @@ main{
     }
 
     #section1{
-        
-        
-        /* grid-template-rows: 100px 1fr 300px 100px 250px; */
+
         margin-top: 50px;
         margin-left: 0;
     }
@@ -733,10 +721,9 @@ main{
     }
 
     blockquote{
-      
         padding-top: 40px;
         padding-left: 20px;
-        font-size: 30px;
+       
     }
 
     .page3{

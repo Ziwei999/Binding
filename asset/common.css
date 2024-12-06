@@ -494,7 +494,9 @@ footer p{
         grid-row: 1;
     }
 
-
+    blockquote{
+        font-size: 1.3rem;
+    }
     
     footer{
 
