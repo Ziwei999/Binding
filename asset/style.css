@@ -143,10 +143,9 @@ h2 {
   margin: 0px 0px 10px 25px;
   font-size: 16px;
   padding-left: 0;
+
 }
 .section .front-c1{
-  /* font: 10px/15px var(--mono); */
-  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
@@ -224,8 +223,12 @@ h1{
   padding: 10px;
 }
 
-.color{
+h4{
   color: var(--text-color);
+  background-color: var(--yellow-color);
+  font-family: Didot;
+  padding: 20px;
+  
 }
 
 @media (min-width: 768px) {
@@ -261,6 +264,10 @@ h1{
  
   .section a.article-link {
     height: 40px;
+  }
+
+  h4{
+    font-size: 1.5rem;
   }
 }
 
@@ -307,6 +314,10 @@ h1{
 
   h1{
     padding: 20px;
+  }
+
+  h4{
+    font-size: 2rem;
   }
  
   

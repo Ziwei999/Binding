@@ -467,10 +467,6 @@ footer p{
         font-weight: 500;
     }
 
-    aside{
-        grid-column: 1;
-        grid-row: 1;
-    }
 
 
     .author p, .time p, .publish p, .book p, .subheader p{
